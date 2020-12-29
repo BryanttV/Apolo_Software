@@ -2,6 +2,7 @@
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -17,6 +18,7 @@ public class Home_Apolo extends javax.swing.JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Acabar el programa cuando oprima la x
         this.setExtendedState(JFrame.MAXIMIZED_BOTH); // Maximizar a pantalla completa
         this.getContentPane().setBackground(Color.red); // Linea de Prueba 
+        setIconImage(new ImageIcon(getClass().getResource("/Imagenes/Apolo_Icono_Blanco_40px.png")).getImage());
     }
 
     private void ocultarBotones() {
