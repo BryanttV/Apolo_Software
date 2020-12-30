@@ -2,40 +2,47 @@
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class Home_Apolo extends javax.swing.JFrame {
 
+    static public VentanaAjustes Ajustes = new VentanaAjustes();
+    public JButton boton = new JButton();
+
     public Home_Apolo() {
         initComponents();
         setVentana();
         ocultarBotones();
+        confirmarCierre();
     }
 
     private void setVentana() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Acabar el programa cuando oprima la x
         this.setExtendedState(JFrame.MAXIMIZED_BOTH); // Maximizar a pantalla completa
         this.getContentPane().setBackground(Color.red); // Linea de Prueba 
-        setIconImage(new ImageIcon(getClass().getResource("/Imagenes/Apolo_Icono_Blanco_40px.png")).getImage());
+        setIconImage(new ImageIcon(getClass().getResource("/Imagenes/Apolo_Icono_Blanco_40px.png")).getImage()); // Agregar icono de Apolo
     }
 
-    private void ocultarBotones() {
-        Button_Aprender_Tema1.setVisible(false);
-        Button_Aprender_Tema2.setVisible(false);
-        Button_Aprender_Tema3.setVisible(false);
-        Button_Aprender_Tema4.setVisible(false);
-        Button_Aprender_Tema5.setVisible(false);
-        Button_Aprender_Tema6.setVisible(false);
-        Button_Aprender_Tema7.setVisible(false);
-        Button_Aprender_Tema8.setVisible(false);
-        Button_Aprender_Tema9.setVisible(false);
-        Button_Aprender_Tema10.setVisible(false);
-        Button_Aprender_Tema11.setVisible(false);
-        Button_Aprender_Tema12.setVisible(false);
-        Button_Aprender_Tema13.setVisible(false);
-        Button_Aprender_Tema14.setVisible(false);
+    private void confirmarCierre() {
+        try {
+            this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+            addWindowListener(new WindowAdapter() {
+                @Override
+                public void windowClosing(WindowEvent e) {
+                    int valor = JOptionPane.showConfirmDialog(null, "¿Está seguro de cerrar la aplicación?", "Advertencia", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+                    if (valor == JOptionPane.YES_OPTION) {
+                        System.exit(0);
+                    }
+                }
+            });
+
+        } catch (Exception e) {
+        }
     }
 
     @SuppressWarnings("unchecked")
@@ -67,14 +74,18 @@ public class Home_Apolo extends javax.swing.JFrame {
         Button_Aprender_Tema13 = new javax.swing.JButton();
         Button_Aprender_Tema14 = new javax.swing.JButton();
         Lbl_Aprender_Mapa = new javax.swing.JLabel();
+        Panel_Programar = new javax.swing.JPanel();
+        Label_Programar = new javax.swing.JLabel();
+        Panel_CodeStorm = new javax.swing.JPanel();
+        Label_CodeStorm = new javax.swing.JLabel();
+        Panel_Historia = new javax.swing.JPanel();
+        Label_Historia = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 255, 0));
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
         setLocation(new java.awt.Point(0, 0));
-        setMaximumSize(new java.awt.Dimension(1366, 705));
         setMinimumSize(new java.awt.Dimension(1366, 705));
-        setPreferredSize(new java.awt.Dimension(1366, 705));
         setSize(new java.awt.Dimension(1366, 705));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -161,7 +172,7 @@ public class Home_Apolo extends javax.swing.JFrame {
         Lbl_Home_Fondo.setForeground(new java.awt.Color(0, 204, 204));
         Lbl_Home_Fondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Lbl_Home_Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Apolo_Home_Fondo.png"))); // NOI18N
-        Lbl_Home_Fondo.setText("Fondo");
+        Lbl_Home_Fondo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         Lbl_Home_Fondo.setMaximumSize(new java.awt.Dimension(1176, 705));
         Lbl_Home_Fondo.setMinimumSize(new java.awt.Dimension(1176, 705));
         Lbl_Home_Fondo.setOpaque(true);
@@ -370,35 +381,169 @@ public class Home_Apolo extends javax.swing.JFrame {
 
         getContentPane().add(Panel_Aprender, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 1176, 705));
 
+        Panel_Programar.setBackground(new java.awt.Color(255, 51, 51));
+        Panel_Programar.setMaximumSize(new java.awt.Dimension(1176, 705));
+        Panel_Programar.setMinimumSize(new java.awt.Dimension(1176, 705));
+        Panel_Programar.setPreferredSize(new java.awt.Dimension(1176, 705));
+        Panel_Programar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Label_Programar.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Label_Programar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Panel_Programar.add(Label_Programar, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 270, 240, 150));
+
+        getContentPane().add(Panel_Programar, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 1176, 705));
+
+        Panel_CodeStorm.setBackground(new java.awt.Color(0, 204, 204));
+        Panel_CodeStorm.setMaximumSize(new java.awt.Dimension(1176, 705));
+        Panel_CodeStorm.setMinimumSize(new java.awt.Dimension(1176, 705));
+        Panel_CodeStorm.setPreferredSize(new java.awt.Dimension(1176, 705));
+        Panel_CodeStorm.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Label_CodeStorm.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        Label_CodeStorm.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Label_CodeStorm.setText("CodeStorm");
+        Panel_CodeStorm.add(Label_CodeStorm, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 320, 270, 70));
+
+        getContentPane().add(Panel_CodeStorm, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 1176, 705));
+
+        Panel_Historia.setBackground(new java.awt.Color(255, 102, 51));
+        Panel_Historia.setMaximumSize(new java.awt.Dimension(1176, 705));
+        Panel_Historia.setMinimumSize(new java.awt.Dimension(1176, 705));
+        Panel_Historia.setPreferredSize(new java.awt.Dimension(1176, 705));
+        Panel_Historia.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Label_Historia.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        Label_Historia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Label_Historia.setText("Historia");
+        Panel_Historia.add(Label_Historia, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 320, 270, 70));
+
+        getContentPane().add(Panel_Historia, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 1176, 705));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void Button_AjustesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_AjustesActionPerformed
         if (Button_Ajustes.isSelected()) {
-            JOptionPane.showMessageDialog(null, "Seleccionado");
-        } else {
-            JOptionPane.showMessageDialog(null, "Deseleccionado");
+            Button_Ajustes.setSelected(false);
+            Ajustes.setVisible(true);
         }
     }//GEN-LAST:event_Button_AjustesActionPerformed
 
     private void Button_CodeStormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_CodeStormActionPerformed
         if (Button_CodeStorm.isSelected()) {
-            JOptionPane.showMessageDialog(null, "Seleccionado");
+            Panel_Aprender.setVisible(false);
+            Panel_Programar.setVisible(false);
+            Panel_Historia.setVisible(false);
+            Panel_CodeStorm.setVisible(true);
+            Panel_Home.setVisible(false);
+            apagarBotones(3);
         } else {
-            JOptionPane.showMessageDialog(null, "Deseleccionado");
+            Panel_CodeStorm.setVisible(false);
+            Panel_Home.setVisible(true);
         }
     }//GEN-LAST:event_Button_CodeStormActionPerformed
 
     private void Button_AprenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_AprenderActionPerformed
         if (Button_Aprender.isSelected()) {
             habilitarBotones();
+            apagarBotones(1);
             Panel_Home.setVisible(false);
+            Panel_Programar.setVisible(false);
             Panel_Aprender.setVisible(true);
         } else {
-            Panel_Home.setVisible(true);
             Panel_Aprender.setVisible(false);
+            Panel_Home.setVisible(true);
         }
     }//GEN-LAST:event_Button_AprenderActionPerformed
+
+    private void Button_ProgramarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_ProgramarActionPerformed
+        if (Button_Programar.isSelected()) {
+            Toolkit t = Toolkit.getDefaultToolkit();
+            Dimension screenSize = t.getScreenSize();
+            Label_Programar.setText(screenSize.width + " x " + screenSize.height);
+            Panel_Aprender.setVisible(false);
+            Panel_Programar.setVisible(true);
+            Panel_Home.setVisible(false);
+            apagarBotones(2);
+        } else {
+            Panel_Programar.setVisible(false);
+            Panel_Home.setVisible(true);
+        }
+    }//GEN-LAST:event_Button_ProgramarActionPerformed
+
+    private void Button_HistoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_HistoriaActionPerformed
+        if (Button_Historia.isSelected()) {
+            Panel_Home.setVisible(false);
+            Panel_Aprender.setVisible(false);
+            Panel_Programar.setVisible(false);
+            Panel_CodeStorm.setVisible(false);
+            Panel_Historia.setVisible(true);
+            apagarBotones(4);
+        } else {
+            Panel_Historia.setVisible(false);
+            Panel_Home.setVisible(true);
+        }
+    }//GEN-LAST:event_Button_HistoriaActionPerformed
+
+    private void Button_Aprender_Tema1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_Aprender_Tema1ActionPerformed
+        if (evt.getSource() == Button_Aprender_Tema1) {
+            JOptionPane.showMessageDialog(null, "Tema 1");
+        }
+    }//GEN-LAST:event_Button_Aprender_Tema1ActionPerformed
+
+    private void ocultarBotones() {
+        Button_Aprender_Tema1.setVisible(false);
+        Button_Aprender_Tema2.setVisible(false);
+        Button_Aprender_Tema3.setVisible(false);
+        Button_Aprender_Tema4.setVisible(false);
+        Button_Aprender_Tema5.setVisible(false);
+        Button_Aprender_Tema6.setVisible(false);
+        Button_Aprender_Tema7.setVisible(false);
+        Button_Aprender_Tema8.setVisible(false);
+        Button_Aprender_Tema9.setVisible(false);
+        Button_Aprender_Tema10.setVisible(false);
+        Button_Aprender_Tema11.setVisible(false);
+        Button_Aprender_Tema12.setVisible(false);
+        Button_Aprender_Tema13.setVisible(false);
+        Button_Aprender_Tema14.setVisible(false);
+    }
+
+    private void apagarBotones(int boton) {
+        switch (boton) {
+            case 1:
+                Button_Programar.setSelected(false);
+                Button_CodeStorm.setSelected(false);
+                Button_Historia.setSelected(false);
+                Button_Ajustes.setSelected(false);
+                break;
+            case 2:
+                Button_Aprender.setSelected(false);
+                Button_CodeStorm.setSelected(false);
+                Button_Historia.setSelected(false);
+                Button_Ajustes.setSelected(false);
+                break;
+            case 3:
+                Button_Aprender.setSelected(false);
+                Button_Programar.setSelected(false);
+                Button_Historia.setSelected(false);
+                Button_Ajustes.setSelected(false);
+                break;
+            case 4:
+                Button_Aprender.setSelected(false);
+                Button_Programar.setSelected(false);
+                Button_CodeStorm.setSelected(false);
+                Button_Ajustes.setSelected(false);
+                break;
+            case 5:
+                Button_Aprender.setSelected(false);
+                Button_Programar.setSelected(false);
+                Button_CodeStorm.setSelected(false);
+                Button_Historia.setSelected(false);
+            default:
+                break;
+        }
+    }
+
     private void habilitarBotones() {
         Button_Aprender_Tema1.setVisible(true);
         Button_Aprender_Tema2.setVisible(true);
@@ -415,30 +560,6 @@ public class Home_Apolo extends javax.swing.JFrame {
         Button_Aprender_Tema13.setVisible(true);
         Button_Aprender_Tema14.setVisible(true);
     }
-    private void Button_ProgramarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_ProgramarActionPerformed
-        if (Button_Programar.isSelected()) {
-            Toolkit t = Toolkit.getDefaultToolkit();
-            Dimension screenSize = t.getScreenSize();
-            JOptionPane.showMessageDialog(null, screenSize.width + " " + screenSize.height);
-
-        } else {
-            JOptionPane.showMessageDialog(null, "Deseleccionado");
-        }
-    }//GEN-LAST:event_Button_ProgramarActionPerformed
-
-    private void Button_HistoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_HistoriaActionPerformed
-        if (Button_Historia.isSelected()) {
-            JOptionPane.showMessageDialog(null, "Seleccionado");
-        } else {
-            JOptionPane.showMessageDialog(null, "Deseleccionado");
-        }
-    }//GEN-LAST:event_Button_HistoriaActionPerformed
-
-    private void Button_Aprender_Tema1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_Aprender_Tema1ActionPerformed
-        if (evt.getSource() == Button_Aprender_Tema1) {
-            JOptionPane.showMessageDialog(null, "Tema 1");
-        }
-    }//GEN-LAST:event_Button_Aprender_Tema1ActionPerformed
 
     private void Button_Aprender_Tema2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_Aprender_Tema2ActionPerformed
         // TODO add your handling code here:
@@ -528,11 +649,17 @@ public class Home_Apolo extends javax.swing.JFrame {
     private javax.swing.JToggleButton Button_CodeStorm;
     private javax.swing.JToggleButton Button_Historia;
     private javax.swing.JToggleButton Button_Programar;
+    private javax.swing.JLabel Label_CodeStorm;
+    private javax.swing.JLabel Label_Historia;
+    private javax.swing.JLabel Label_Programar;
     private javax.swing.JLabel Lbl_Aprender_Mapa;
     private javax.swing.JLabel Lbl_HomeButttons;
     private javax.swing.JLabel Lbl_Home_Fondo;
     private javax.swing.JPanel Panel_Aprender;
     private javax.swing.JPanel Panel_Bar_Buttons;
+    private javax.swing.JPanel Panel_CodeStorm;
+    private javax.swing.JPanel Panel_Historia;
     private javax.swing.JPanel Panel_Home;
+    private javax.swing.JPanel Panel_Programar;
     // End of variables declaration//GEN-END:variables
 }
