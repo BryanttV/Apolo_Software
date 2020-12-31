@@ -1,24 +1,49 @@
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.FontFormatException;
 import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.File;
+import java.io.IOException;
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class Home_Apolo extends javax.swing.JFrame {
 
     static public VentanaAjustes Ajustes = new VentanaAjustes();
-    public JButton boton = new JButton();
 
     public Home_Apolo() {
+
         initComponents();
         setVentana();
+        cargarFuente();
         ocultarBotones();
         confirmarCierre();
+    }
+
+    private void cargarFuente() {
+        File fuenteBold = new File("EuclidCircularA-Bold.ttf");
+        File fuenteRegular = new File("EuclidCircularA-Regular.ttf");
+
+        try {
+            Font EuclidBold = Font.createFont(Font.TRUETYPE_FONT, fuenteBold);
+            Font EuclidRegular = Font.createFont(Font.TRUETYPE_FONT, fuenteRegular);
+            Font Regular = EuclidRegular.deriveFont(14f);
+            Font Bold = EuclidBold.deriveFont(30f);
+            Label_Programar.setFont(Regular);
+            Label_Programar.setForeground(Color.WHITE);
+            Label_CodeStorm.setFont(Bold);
+            Label_Historia.setFont(Bold);
+
+        } catch (FontFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Error de Formato");
+        } catch (IOException ex) {
+            JOptionPane.showMessageDialog(null, "Error de Entrada / Salida");
+        }
     }
 
     private void setVentana() {
@@ -389,7 +414,7 @@ public class Home_Apolo extends javax.swing.JFrame {
 
         Label_Programar.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Label_Programar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Panel_Programar.add(Label_Programar, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 270, 240, 150));
+        Panel_Programar.add(Label_Programar, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 270, 300, 150));
 
         getContentPane().add(Panel_Programar, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 1176, 705));
 
@@ -460,7 +485,7 @@ public class Home_Apolo extends javax.swing.JFrame {
         if (Button_Programar.isSelected()) {
             Toolkit t = Toolkit.getDefaultToolkit();
             Dimension screenSize = t.getScreenSize();
-            Label_Programar.setText(screenSize.width + " x " + screenSize.height);
+            Label_Programar.setText("Su Resolución de Pantalla es " + screenSize.width + " x " + screenSize.height);
             Panel_Aprender.setVisible(false);
             Panel_Programar.setVisible(true);
             Panel_Home.setVisible(false);
