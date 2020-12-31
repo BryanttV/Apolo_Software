@@ -472,6 +472,8 @@ public class Home_Apolo extends javax.swing.JFrame {
             Panel_Aprender.setVisible(true);
             Panel_Home.setVisible(false);
             Panel_Programar.setVisible(false);
+            Panel_CodeStorm.setVisible(false);
+            Panel_Historia.setVisible(false);
             habilitarBotones();
             apagarBotones(1);
         } else {
