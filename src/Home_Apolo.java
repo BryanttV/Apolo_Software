@@ -59,13 +59,12 @@ public class Home_Apolo extends javax.swing.JFrame {
             addWindowListener(new WindowAdapter() {
                 @Override
                 public void windowClosing(WindowEvent e) {
-                    int valor = JOptionPane.showConfirmDialog(null, "¿Está seguro de cerrar la aplicación?", "Advertencia", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+                    int valor = JOptionPane.showConfirmDialog(null, "¿Está seguro/a de cerrar la aplicación?", "Advertencia", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
                     if (valor == JOptionPane.YES_OPTION) {
                         System.exit(0);
                     }
                 }
             });
-
         } catch (Exception e) {
         }
     }
@@ -456,10 +455,10 @@ public class Home_Apolo extends javax.swing.JFrame {
 
     private void Button_CodeStormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_CodeStormActionPerformed
         if (Button_CodeStorm.isSelected()) {
+            Panel_CodeStorm.setVisible(true);
             Panel_Aprender.setVisible(false);
             Panel_Programar.setVisible(false);
             Panel_Historia.setVisible(false);
-            Panel_CodeStorm.setVisible(true);
             Panel_Home.setVisible(false);
             apagarBotones(3);
         } else {
@@ -470,11 +469,11 @@ public class Home_Apolo extends javax.swing.JFrame {
 
     private void Button_AprenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_AprenderActionPerformed
         if (Button_Aprender.isSelected()) {
-            habilitarBotones();
-            apagarBotones(1);
+            Panel_Aprender.setVisible(true);
             Panel_Home.setVisible(false);
             Panel_Programar.setVisible(false);
-            Panel_Aprender.setVisible(true);
+            habilitarBotones();
+            apagarBotones(1);
         } else {
             Panel_Aprender.setVisible(false);
             Panel_Home.setVisible(true);
@@ -487,8 +486,8 @@ public class Home_Apolo extends javax.swing.JFrame {
             Dimension screenSize = t.getScreenSize();
             Label_Programar.setText("Su Resolución de Pantalla es " + screenSize.width + " x " + screenSize.height);
             Panel_Aprender.setVisible(false);
-            Panel_Programar.setVisible(true);
             Panel_Home.setVisible(false);
+            Panel_Programar.setVisible(true);
             apagarBotones(2);
         } else {
             Panel_Programar.setVisible(false);
