@@ -4,22 +4,24 @@ import java.awt.Font;
 import java.awt.FontFormatException;
 import java.io.File;
 import java.io.IOException;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class VentanaAjustes extends javax.swing.JFrame {
-    
+
     static public Home_Apolo Home = new Home_Apolo();
-    
+
     public VentanaAjustes() {
         initComponents();
         setVentana();
         cargarFuente();
     }
-    
+
     private void setVentana() {
         this.setLocationRelativeTo(null);
+        setIconImage(new ImageIcon(getClass().getResource("/Resources/Apolo_Icono_Blanco_40px.png")).getImage()); // Agregar icono de Apolo
     }
-    
+
     private void cargarFuente() {
         File fuente = new File("EuclidCircularA-Regular.ttf");
         try {
@@ -33,7 +35,7 @@ public class VentanaAjustes extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Error de Entrada / Salida");
         }
     }
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
