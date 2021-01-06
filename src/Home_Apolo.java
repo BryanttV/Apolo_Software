@@ -7,12 +7,11 @@ import java.awt.event.WindowEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-<<<<<<< HEAD
-//import GUI.CodeEditor;
-=======
+
+import GUI.CodeEditor;
 import Tipografias.Fuentes;
 import java.awt.Font;
->>>>>>> Bryann
+
 
 public class Home_Apolo extends javax.swing.JFrame {
 
@@ -57,12 +56,10 @@ public class Home_Apolo extends javax.swing.JFrame {
 
     private void setVentana() {
         this.setExtendedState(JFrame.MAXIMIZED_BOTH); // Maximizar a pantalla completa
-<<<<<<< HEAD
+
 //        this.getContentPane().setBackground(Color.red); // Linea de Prueba 
-=======
         this.getContentPane().setBackground(Color.red); // Color de Fondo del JFrame
         setIconImage(new ImageIcon(getClass().getResource("/Resources/Apolo_Icono_Blanco_40px.png")).getImage()); // Agregar icono de Apolo
->>>>>>> Bryann
     }
 
     private void confirmarCierre() {
@@ -1723,6 +1720,7 @@ public class Home_Apolo extends javax.swing.JFrame {
 
     private void Button_ProgramarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_ProgramarActionPerformed
         if (Button_Programar.isSelected()) {
+            CodeEditor cd = new CodeEditor();
             Toolkit t = Toolkit.getDefaultToolkit();
             Dimension screenSize = t.getScreenSize();
             Label_Programar.setText("Su Resolución de Pantalla es " + screenSize.width + " x " + screenSize.height);
