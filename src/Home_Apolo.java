@@ -16,7 +16,7 @@ public class Home_Apolo extends javax.swing.JFrame {
     private void setVentana() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Acabar el programa cuando oprima la x
         this.setExtendedState(JFrame.MAXIMIZED_BOTH); // Maximizar a pantalla completa
-        this.getContentPane().setBackground(Color.red); // Linea de Prueba 
+//        this.getContentPane().setBackground(Color.red); // Linea de Prueba 
     }
 
     private void ocultarBotones() {
