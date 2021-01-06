@@ -6,10 +6,12 @@ import java.io.File;
 import java.io.IOException;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import Tipografias.Fuentes;
 
 public class VentanaAjustes extends javax.swing.JFrame {
 
     static public Home_Apolo Home = new Home_Apolo();
+    Fuentes Euclid = new Fuentes();
 
     public VentanaAjustes() {
         initComponents();
@@ -23,17 +25,10 @@ public class VentanaAjustes extends javax.swing.JFrame {
     }
 
     private void cargarFuente() {
-        File fuente = new File("EuclidCircularA-Regular.ttf");
-        try {
-            Font Euclid = Font.createFont(Font.TRUETYPE_FONT, fuente);
-            Font sizedFont = Euclid.deriveFont(14f);
-            Label_Ajustes.setFont(sizedFont);
-            Label_Ajustes.setForeground(Color.BLACK);
-        } catch (FontFormatException ex) {
-            JOptionPane.showMessageDialog(null, "Error de Formato");
-        } catch (IOException ex) {
-            JOptionPane.showMessageDialog(null, "Error de Entrada / Salida");
-        }
+        Font Regular14p = Euclid.fuente(Euclid.EUCR, 0, 14);
+
+        Label_Ajustes.setFont(Regular14p);
+        Label_Ajustes.setForeground(Color.BLACK);
     }
 
     @SuppressWarnings("unchecked")
