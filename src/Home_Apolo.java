@@ -28,6 +28,7 @@ public class Home_Apolo extends javax.swing.JFrame {
     private void cargarFuente() {
         Font Regular14p = Euclid.fuente(Euclid.EUCR, 0, 14);
         Font Bold30p = Euclid.fuente(Euclid.EUCB, 0, 30);
+        
         Label_Programar.setFont(Regular14p);
         Label_Programar.setForeground(Color.BLACK);
         Label_HelloWorld.setFont(Bold30p);
