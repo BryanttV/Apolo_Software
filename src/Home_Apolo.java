@@ -56,8 +56,6 @@ public class Home_Apolo extends javax.swing.JFrame {
 
     private void setVentana() {
         this.setExtendedState(JFrame.MAXIMIZED_BOTH); // Maximizar a pantalla completa
-
-//        this.getContentPane().setBackground(Color.red); // Linea de Prueba 
         this.getContentPane().setBackground(Color.red); // Color de Fondo del JFrame
         setIconImage(new ImageIcon(getClass().getResource("/Resources/Apolo_Icono_Blanco_40px.png")).getImage()); // Agregar icono de Apolo
     }
