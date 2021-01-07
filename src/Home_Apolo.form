@@ -54,7 +54,7 @@
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JToggleButton" name="Button_Aprender">
+        <Component class="javax.swing.JToggleButton" name="Btn_Aprender">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Button_Off.png"/>
@@ -72,7 +72,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_AprenderActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_AprenderActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -80,7 +80,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="Button_CodeStorm">
+        <Component class="javax.swing.JToggleButton" name="Btn_CodeStorm">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStormButton_Off.png"/>
@@ -98,7 +98,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_CodeStormActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_CodeStormActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -106,7 +106,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="Button_Programar">
+        <Component class="javax.swing.JToggleButton" name="Btn_Programar">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Resources/Apolo_ProgramaButton_Off.png"/>
@@ -124,7 +124,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_ProgramarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_ProgramarActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -132,7 +132,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="Button_Ajustes">
+        <Component class="javax.swing.JToggleButton" name="Btn_Ajustes">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Resources/Apolo_AjustesButton_Off.png"/>
@@ -150,7 +150,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_AjustesActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_AjustesActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -158,7 +158,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JToggleButton" name="Button_Historia">
+        <Component class="javax.swing.JToggleButton" name="Btn_Historia">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/Resources/Apolo_HistoriaButton_Off.png"/>
@@ -176,7 +176,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_HistoriaActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_HistoriaActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -289,7 +289,7 @@
             <Property name="useNullLayout" type="boolean" value="false"/>
           </Layout>
           <SubComponents>
-            <Container class="javax.swing.JPanel" name="Panel_Mapa">
+            <Container class="javax.swing.JPanel" name="Pnl_Mapa">
               <Properties>
                 <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[1176, 705]"/>
@@ -311,24 +311,24 @@
                 <Property name="useNullLayout" type="boolean" value="false"/>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Tema1">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Tema1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema1_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema1_Off.png"/>
                     </Property>
                     <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="focusPainted" type="boolean" value="false"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema1_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema1_On.png"/>
                     </Property>
                   </Properties>
                   <AccessibilityProperties>
                     <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
                   </AccessibilityProperties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Aprender_Tema1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Aprender_Tema1ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -336,21 +336,21 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Tema2">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Tema2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema2_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema2_Off.png"/>
                     </Property>
                     <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="focusPainted" type="boolean" value="false"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema2_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema2_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Aprender_Tema2ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Aprender_Tema2ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -358,21 +358,21 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Tema3">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Tema3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema3_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema3_Off.png"/>
                     </Property>
                     <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="focusPainted" type="boolean" value="false"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema3_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema3_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Aprender_Tema3ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Aprender_Tema3ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -380,21 +380,21 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Tema4">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Tema4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema4_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema4_Off.png"/>
                     </Property>
                     <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="focusPainted" type="boolean" value="false"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema4_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema4_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Aprender_Tema4ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Aprender_Tema4ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -402,21 +402,21 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Tema5">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Tema5">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema5_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema5_Off.png"/>
                     </Property>
                     <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="focusPainted" type="boolean" value="false"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema5_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema5_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Aprender_Tema5ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Aprender_Tema5ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -424,21 +424,21 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Tema6">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Tema6">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema6_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema6_Off.png"/>
                     </Property>
                     <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="focusPainted" type="boolean" value="false"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema6_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema6_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Aprender_Tema6ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Aprender_Tema6ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -446,21 +446,21 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Tema7">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Tema7">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema7_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema7_Off.png"/>
                     </Property>
                     <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="focusPainted" type="boolean" value="false"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema7_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema7_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Aprender_Tema7ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Aprender_Tema7ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -468,21 +468,21 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Tema8">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Tema8">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema8_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema8_Off.png"/>
                     </Property>
                     <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="focusPainted" type="boolean" value="false"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema8_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema8_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Aprender_Tema8ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Aprender_Tema8ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -490,21 +490,21 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Tema9">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Tema9">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema9_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema9_Off.png"/>
                     </Property>
                     <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="focusPainted" type="boolean" value="false"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema9_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema9_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Aprender_Tema9ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Aprender_Tema9ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -512,21 +512,21 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Tema10">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Tema10">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema10_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema10_Off.png"/>
                     </Property>
                     <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="focusPainted" type="boolean" value="false"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema10_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema10_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Aprender_Tema10ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Aprender_Tema10ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -534,21 +534,21 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Tema11">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Tema11">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema11_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema11_Off.png"/>
                     </Property>
                     <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="focusPainted" type="boolean" value="false"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema11_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema11_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Aprender_Tema11ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Aprender_Tema11ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -556,21 +556,21 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Tema12">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Tema12">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema12_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema12_Off.png"/>
                     </Property>
                     <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="focusPainted" type="boolean" value="false"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema12_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema12_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Aprender_Tema12ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Aprender_Tema12ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -578,21 +578,21 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Tema13">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Tema13">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema13_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema13_Off.png"/>
                     </Property>
                     <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="focusPainted" type="boolean" value="false"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema13_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema13_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Aprender_Tema13ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Aprender_Tema13ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -600,21 +600,21 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Tema14">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Tema14">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema14_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema14_Off.png"/>
                     </Property>
                     <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="contentAreaFilled" type="boolean" value="false"/>
                     <Property name="focusPainted" type="boolean" value="false"/>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Tema14_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Tema14_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Aprender_Tema14ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Aprender_Tema14ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -622,10 +622,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Ejercicio1">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Ejercicio1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Ejercicio1_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Ejercicio1_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -643,7 +643,7 @@
                       <Dimension value="[71, 123]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Ejercicio1_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Ejercicio1_On.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -652,10 +652,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_Ejercicio2">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_Ejercicio2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Ejercicio2_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Ejercicio2_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -672,7 +672,7 @@
                       <Dimension value="[90, 140]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Ejercicio2_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Ejercicio2_On.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -681,10 +681,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Aprender_EjercicioFinal">
+                <Component class="javax.swing.JButton" name="Btn_Aprender_EjercicioFinal">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_EjercicioFinal_Off.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/EjercicioFinal_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -701,7 +701,7 @@
                       <Dimension value="[121, 184]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_EjercicioFinal_On.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/EjercicioFinal_On.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -717,7 +717,7 @@
                     </Property>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/Aprender/Apolo_Aprender_Mapa.png"/>
+                      <Image iconType="3" name="/Resources/Aprender/Mapa.png"/>
                     </Property>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -739,7 +739,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JScrollPane" name="ScrollPane_Tema1">
+            <Container class="javax.swing.JScrollPane" name="Scp_Tema1">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -766,7 +766,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="Panel_Tema1">
+                <Container class="javax.swing.JPanel" name="Pnl_Tema1">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="f3" green="ea" red="ed" type="rgb"/>
@@ -789,7 +789,7 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="Button_Siguiente_Cuestionario1">
+                    <Component class="javax.swing.JButton" name="Btn_Siguiente_Cuestionario1">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                           <Connection code="null" type="code"/>
@@ -819,7 +819,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Siguiente_Cuestionario1ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_Cuestionario1ActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -839,7 +839,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="Label_HelloWorld">
+                    <Component class="javax.swing.JLabel" name="Lbl_HelloWorld">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
@@ -856,7 +856,7 @@
                 </Container>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JScrollPane" name="ScrollPane_Cuestionario1">
+            <Container class="javax.swing.JScrollPane" name="Scp_Cuestionario1">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -880,7 +880,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="Panel_Cuestionario1">
+                <Container class="javax.swing.JPanel" name="Pnl_Cuestionario1">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="f3" green="ea" red="ed" type="rgb"/>
@@ -903,7 +903,7 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="Button_Anterior_HelloWord">
+                    <Component class="javax.swing.JButton" name="Btn_Anterior_HelloWord">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Anterior_HelloWorld_Off.png"/>
@@ -929,7 +929,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Anterior_HelloWordActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_HelloWordActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -937,7 +937,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JButton" name="Button_Siguiente_Comentarios">
+                    <Component class="javax.swing.JButton" name="Btn_Siguiente_Comentarios">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Siguiente_Comentarios_Off.png"/>
@@ -963,7 +963,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Siguiente_ComentariosActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_ComentariosActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -983,7 +983,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="Label_Cuestionario1">
+                    <Component class="javax.swing.JLabel" name="Lbl_Cuestionario1">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
@@ -1000,7 +1000,7 @@
                 </Container>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JScrollPane" name="ScrollPane_Tema2">
+            <Container class="javax.swing.JScrollPane" name="Scp_Tema2">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -1024,7 +1024,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="Panel_Tema2">
+                <Container class="javax.swing.JPanel" name="Pnl_Tema2">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="f3" green="ea" red="ed" type="rgb"/>
@@ -1047,7 +1047,7 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="Button_Anterior_Cuestionario1">
+                    <Component class="javax.swing.JButton" name="Btn_Anterior_Cuestionario1">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario1_Off.png"/>
@@ -1073,7 +1073,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Anterior_Cuestionario1ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_Cuestionario1ActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1081,7 +1081,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JButton" name="Button_Siguiente_Cuestionario2">
+                    <Component class="javax.swing.JButton" name="Btn_Siguiente_Cuestionario2">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario2_Off.png"/>
@@ -1107,7 +1107,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Siguiente_Cuestionario2ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_Cuestionario2ActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1127,7 +1127,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="Label_Comentarios">
+                    <Component class="javax.swing.JLabel" name="Lbl_Comentarios">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
@@ -1144,7 +1144,7 @@
                 </Container>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JScrollPane" name="ScrollPane_Cuestionario2">
+            <Container class="javax.swing.JScrollPane" name="Scp_Cuestionario2">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -1168,7 +1168,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="Panel_Cuestionario2">
+                <Container class="javax.swing.JPanel" name="Pnl_Cuestionario2">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="f3" green="ea" red="ed" type="rgb"/>
@@ -1191,7 +1191,7 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="Button_Anterior_Comentarios">
+                    <Component class="javax.swing.JButton" name="Btn_Anterior_Comentarios">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Anterior_Comentarios_Off.png"/>
@@ -1217,7 +1217,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Anterior_ComentariosActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_ComentariosActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1225,7 +1225,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JButton" name="Button_Siguiente_TiposdeDatos">
+                    <Component class="javax.swing.JButton" name="Btn_Siguiente_TiposdeDatos">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Siguiente_TiposdeDatos_Off.png"/>
@@ -1251,7 +1251,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Siguiente_TiposdeDatosActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_TiposdeDatosActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1271,7 +1271,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="Label_Cuestionario2">
+                    <Component class="javax.swing.JLabel" name="Lbl_Cuestionario2">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
@@ -1288,7 +1288,7 @@
                 </Container>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JScrollPane" name="ScrollPane_Tema3">
+            <Container class="javax.swing.JScrollPane" name="Scp_Tema3">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -1312,7 +1312,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="Panel_Tema3">
+                <Container class="javax.swing.JPanel" name="Pnl_Tema3">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="f3" green="ea" red="ed" type="rgb"/>
@@ -1335,7 +1335,7 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="Button_Anterior_Cuestionario2">
+                    <Component class="javax.swing.JButton" name="Btn_Anterior_Cuestionario2">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario2_Off.png"/>
@@ -1361,7 +1361,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Anterior_Cuestionario2ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_Cuestionario2ActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1369,7 +1369,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JButton" name="Button_Siguiente_Cuestionario3">
+                    <Component class="javax.swing.JButton" name="Btn_Siguiente_Cuestionario3">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario3_Off.png"/>
@@ -1395,7 +1395,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Siguiente_Cuestionario3ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_Cuestionario3ActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1415,7 +1415,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="Label_TiposdeDatos">
+                    <Component class="javax.swing.JLabel" name="Lbl_TiposdeDatos">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
@@ -1432,7 +1432,7 @@
                 </Container>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JScrollPane" name="ScrollPane_Cuestionario3">
+            <Container class="javax.swing.JScrollPane" name="Scp_Cuestionario3">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -1456,7 +1456,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="Panel_Cuestionario3">
+                <Container class="javax.swing.JPanel" name="Pnl_Cuestionario3">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="f3" green="ea" red="ed" type="rgb"/>
@@ -1479,7 +1479,7 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="Button_Anterior_TiposdeDatos">
+                    <Component class="javax.swing.JButton" name="Btn_Anterior_TiposdeDatos">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Anterior_TiposdeDatos_Off.png"/>
@@ -1505,7 +1505,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Anterior_TiposdeDatosActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_TiposdeDatosActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1513,7 +1513,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JButton" name="Button_Siguiente_OperadoresAritmeticos">
+                    <Component class="javax.swing.JButton" name="Btn_Siguiente_OperadoresAritmeticos">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Siguiente_OperadoresAritmeticos_Off.png"/>
@@ -1539,7 +1539,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Siguiente_OperadoresAritmeticosActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_OperadoresAritmeticosActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1559,7 +1559,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="Label_Cuestionario3">
+                    <Component class="javax.swing.JLabel" name="Lbl_Cuestionario3">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
@@ -1576,7 +1576,7 @@
                 </Container>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JScrollPane" name="ScrollPane_Tema4">
+            <Container class="javax.swing.JScrollPane" name="Scp_Tema4">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -1600,7 +1600,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="Panel_Tema4">
+                <Container class="javax.swing.JPanel" name="Pnl_Tema4">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="f3" green="ea" red="ed" type="rgb"/>
@@ -1623,7 +1623,7 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="Button_Anterior_Cuestionario3">
+                    <Component class="javax.swing.JButton" name="Btn_Anterior_Cuestionario3">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario3_Off.png"/>
@@ -1649,7 +1649,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Anterior_Cuestionario3ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_Cuestionario3ActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1657,7 +1657,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JButton" name="Button_Siguiente_Cuestionario4">
+                    <Component class="javax.swing.JButton" name="Btn_Siguiente_Cuestionario4">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario4_Off.png"/>
@@ -1683,7 +1683,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Siguiente_Cuestionario4ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_Cuestionario4ActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1703,7 +1703,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="Label_OperadoresAritmeticos">
+                    <Component class="javax.swing.JLabel" name="Lbl_OperadoresAritmeticos">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
@@ -1720,7 +1720,7 @@
                 </Container>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JScrollPane" name="ScrollPane_Cuestionario4">
+            <Container class="javax.swing.JScrollPane" name="Scp_Cuestionario4">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -1744,7 +1744,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="Panel_Cuestionario4">
+                <Container class="javax.swing.JPanel" name="Pnl_Cuestionario4">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="f3" green="ea" red="ed" type="rgb"/>
@@ -1767,7 +1767,7 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="Button_Anterior_OperadoresAritmeticos">
+                    <Component class="javax.swing.JButton" name="Btn_Anterior_OperadoresAritmeticos">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_Off.png"/>
@@ -1793,7 +1793,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Anterior_OperadoresAritmeticosActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_OperadoresAritmeticosActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1801,7 +1801,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JButton" name="Button_Siguiente_LecturaeImpresion">
+                    <Component class="javax.swing.JButton" name="Btn_Siguiente_LecturaeImpresion">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_Off.png"/>
@@ -1827,7 +1827,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Siguiente_LecturaeImpresionActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_LecturaeImpresionActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1847,7 +1847,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="Label_Cuestionario4">
+                    <Component class="javax.swing.JLabel" name="Lbl_Cuestionario4">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
@@ -1864,7 +1864,7 @@
                 </Container>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JScrollPane" name="ScrollPane_Tema5">
+            <Container class="javax.swing.JScrollPane" name="Scp_Tema5">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -1888,7 +1888,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="Panel_Tema5">
+                <Container class="javax.swing.JPanel" name="Pnl_Tema5">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="f3" green="ea" red="ed" type="rgb"/>
@@ -1911,7 +1911,7 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="Button_Anterior_Cuestionario4">
+                    <Component class="javax.swing.JButton" name="Btn_Anterior_Cuestionario4">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_Off_1.png"/>
@@ -1934,7 +1934,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Anterior_Cuestionario4ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_Cuestionario4ActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1942,7 +1942,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JButton" name="Button_Siguiente_Cuestionario5">
+                    <Component class="javax.swing.JButton" name="Btn_Siguiente_Cuestionario5">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_Off.png"/>
@@ -1965,7 +1965,7 @@
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Siguiente_Cuestionario5ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_Cuestionario5ActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1985,7 +1985,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="Label_LecturaeImpresion">
+                    <Component class="javax.swing.JLabel" name="Lbl_LecturaeImpresion">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
@@ -2029,7 +2029,7 @@
             <Property name="useNullLayout" type="boolean" value="false"/>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="Label_Programar">
+            <Component class="javax.swing.JLabel" name="Lbl_Programar">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="24" style="0"/>
@@ -2112,10 +2112,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Introduccion">
+                <Component class="javax.swing.JButton" name="Btn_Introduccion">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Introduccion_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Introduccion_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2133,11 +2133,11 @@
                       <Dimension value="[202, 62]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Introduccion_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Introduccion_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_IntroduccionActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_IntroduccionActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2145,10 +2145,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel1_Ejercicio1">
+                <Component class="javax.swing.JButton" name="Btn_Nivel1_Ejercicio1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio1_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio1_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2166,11 +2166,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio1_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio1_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel1_Ejercicio1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel1_Ejercicio1ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2178,10 +2178,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel1_Ejercicio2">
+                <Component class="javax.swing.JButton" name="Btn_Nivel1_Ejercicio2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio2_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio2_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2199,11 +2199,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio2_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio2_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel1_Ejercicio2ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel1_Ejercicio2ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2211,10 +2211,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel1_Ejercicio3">
+                <Component class="javax.swing.JButton" name="Btn_Nivel1_Ejercicio3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio3_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio3_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2232,11 +2232,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio3_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio3_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel1_Ejercicio3ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel1_Ejercicio3ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2244,10 +2244,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel1_Ejercicio4">
+                <Component class="javax.swing.JButton" name="Btn_Nivel1_Ejercicio4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio4_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio4_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2265,11 +2265,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio4_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio4_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel1_Ejercicio4ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel1_Ejercicio4ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2277,10 +2277,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel2_Ejercicio1">
+                <Component class="javax.swing.JButton" name="Btn_Nivel2_Ejercicio1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio1_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio1_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2298,11 +2298,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio1_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio1_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel2_Ejercicio1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel2_Ejercicio1ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2310,10 +2310,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel2_Ejercicio2">
+                <Component class="javax.swing.JButton" name="Btn_Nivel2_Ejercicio2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio2_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio2_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2331,11 +2331,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio2_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio2_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel2_Ejercicio2ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel2_Ejercicio2ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2343,10 +2343,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel2_Ejercicio3">
+                <Component class="javax.swing.JButton" name="Btn_Nivel2_Ejercicio3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio3_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio3_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2364,11 +2364,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio3_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio3_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel2_Ejercicio3ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel2_Ejercicio3ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2376,10 +2376,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel2_Ejercicio4">
+                <Component class="javax.swing.JButton" name="Btn_Nivel2_Ejercicio4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio4_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio4_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2397,11 +2397,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio4_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio4_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel2_Ejercicio4ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel2_Ejercicio4ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2409,10 +2409,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel3_Ejercicio1">
+                <Component class="javax.swing.JButton" name="Btn_Nivel3_Ejercicio1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio1_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio1_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2430,11 +2430,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio1_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio1_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel3_Ejercicio1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel3_Ejercicio1ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2442,10 +2442,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel3_Ejercicio2">
+                <Component class="javax.swing.JButton" name="Btn_Nivel3_Ejercicio2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio2_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio2_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2463,11 +2463,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio2_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio2_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel3_Ejercicio2ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel3_Ejercicio2ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2475,10 +2475,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel3_Ejercicio3">
+                <Component class="javax.swing.JButton" name="Btn_Nivel3_Ejercicio3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio3_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio3_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2496,11 +2496,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio3_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio3_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel3_Ejercicio3ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel3_Ejercicio3ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2508,10 +2508,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel3_Ejercicio4">
+                <Component class="javax.swing.JButton" name="Btn_Nivel3_Ejercicio4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio4_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio4_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2529,11 +2529,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio4_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio4_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel3_Ejercicio4ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel3_Ejercicio4ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2541,10 +2541,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel4_Ejercicio1">
+                <Component class="javax.swing.JButton" name="Btn_Nivel4_Ejercicio1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio1_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio1_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2562,11 +2562,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio1_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio1_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel4_Ejercicio1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel4_Ejercicio1ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2574,10 +2574,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel4_Ejercicio2">
+                <Component class="javax.swing.JButton" name="Btn_Nivel4_Ejercicio2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio2_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio2_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2595,11 +2595,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio2_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio2_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel4_Ejercicio2ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel4_Ejercicio2ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2607,10 +2607,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel4_Ejercicio3">
+                <Component class="javax.swing.JButton" name="Btn_Nivel4_Ejercicio3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio3_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio3_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2628,11 +2628,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio3_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio3_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel4_Ejercicio3ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel4_Ejercicio3ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2640,10 +2640,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel4_Ejercicio4">
+                <Component class="javax.swing.JButton" name="Btn_Nivel4_Ejercicio4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio4_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio4_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2661,11 +2661,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio4_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio4_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel4_Ejercicio4ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel4_Ejercicio4ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2673,10 +2673,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel5_Ejercicio1">
+                <Component class="javax.swing.JButton" name="Btn_Nivel5_Ejercicio1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio1_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio1_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2694,11 +2694,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio1_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio1_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel5_Ejercicio1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel5_Ejercicio1ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2706,10 +2706,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel5_Ejercicio2">
+                <Component class="javax.swing.JButton" name="Btn_Nivel5_Ejercicio2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio2_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio2_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2727,11 +2727,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio2_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio2_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel5_Ejercicio2ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel5_Ejercicio2ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2739,10 +2739,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel5_Ejercicio3">
+                <Component class="javax.swing.JButton" name="Btn_Nivel5_Ejercicio3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio3_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio3_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2760,11 +2760,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio3_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio3_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel5_Ejercicio3ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel5_Ejercicio3ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2772,10 +2772,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JButton" name="Button_Nivel5_Ejercicio4">
+                <Component class="javax.swing.JButton" name="Btn_Nivel5_Ejercicio4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio4_Off.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio4_Off.png"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
@@ -2793,11 +2793,11 @@
                       <Dimension value="[142, 52]"/>
                     </Property>
                     <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Ejercicio4_On.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Ejercicio4_On.png"/>
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_Nivel5_Ejercicio4ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Nivel5_Ejercicio4ActionPerformed"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2809,7 +2809,7 @@
                   <Properties>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Nivel1.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Nivel1.png"/>
                     </Property>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                   </Properties>
@@ -2823,7 +2823,7 @@
                   <Properties>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Nivel2.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Nivel2.png"/>
                     </Property>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                   </Properties>
@@ -2837,7 +2837,7 @@
                   <Properties>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Nivel3.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Nivel3.png"/>
                     </Property>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                   </Properties>
@@ -2851,7 +2851,7 @@
                   <Properties>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Nivel4.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Nivel4.png"/>
                     </Property>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                   </Properties>
@@ -2865,7 +2865,7 @@
                   <Properties>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_Nivel5.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/Nivel5.png"/>
                     </Property>
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                   </Properties>
@@ -2878,7 +2878,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel1_0">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_0.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_0.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -2890,7 +2890,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel1_1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_1.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_1.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -2902,7 +2902,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel1_2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_2.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_2.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -2914,7 +2914,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel1_3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_3.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_3.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -2926,7 +2926,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel1_4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_4.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_4.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -2938,7 +2938,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel2_0">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_0.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_0.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -2950,7 +2950,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel2_1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_1.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_1.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -2962,7 +2962,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel2_2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_2.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_2.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -2974,7 +2974,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel2_3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_3.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_3.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -2986,7 +2986,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel2_4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_4.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_4.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -2998,7 +2998,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel3_0">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_0.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_0.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -3010,7 +3010,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel3_1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_1.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_1.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -3022,7 +3022,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel3_2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_2.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_2.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -3034,7 +3034,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel3_3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_3.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_3.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -3046,7 +3046,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel3_4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_4.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_4.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -3058,7 +3058,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel4_0">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_0.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_0.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -3070,7 +3070,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel4_1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_1.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_1.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -3082,7 +3082,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel4_2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_2.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_2.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -3094,7 +3094,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel4_3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_3.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_3.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -3106,7 +3106,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel4_4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_4.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_4.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -3118,7 +3118,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel5_0">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_0.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_0.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -3130,7 +3130,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel5_1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_1.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_1.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -3142,7 +3142,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel5_2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_2.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_2.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -3154,7 +3154,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel5_3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_3.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_3.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -3166,7 +3166,7 @@
                 <Component class="javax.swing.JLabel" name="Lbl_BarraProgreso_Nivel5_4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Resources/CodeStorm/Apolo_CodeStorm_BarraProgreso_4.png"/>
+                      <Image iconType="3" name="/Resources/CodeStorm/BarraProgreso_4.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -3217,7 +3217,7 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="Panel_Introduccion">
+                <Container class="javax.swing.JPanel" name="Pnl_Introduccion">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="f3" green="ea" red="ed" type="rgb"/>
@@ -3272,7 +3272,7 @@
                 <Property name="useNullLayout" type="boolean" value="false"/>
               </Layout>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="Pnl_Buttons">
+                <Container class="javax.swing.JPanel" name="Pnl_Header">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="f3" green="ea" red="ed" type="rgb"/>
@@ -3280,7 +3280,37 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="0" y="0" width="1176" height="150"/>
+                      <AbsoluteConstraints x="0" y="0" width="1176" height="90"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                    <Property name="useNullLayout" type="boolean" value="false"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JLabel" name="Lbl_Header_CodeStorm2">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/Resources/Apolo_Header_CodeStorm.png"/>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                          <AbsoluteConstraints x="22" y="20" width="1115" height="55"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="Pnl_BotonesPrincipales">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="0" y="90" width="770" height="70"/>
                     </Constraint>
                   </Constraints>
 
@@ -3323,7 +3353,7 @@
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="30" y="100" width="172" height="47"/>
+                          <AbsoluteConstraints x="30" y="10" width="172" height="47"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -3362,7 +3392,7 @@
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="210" y="100" width="172" height="47"/>
+                          <AbsoluteConstraints x="210" y="10" width="172" height="47"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -3401,7 +3431,7 @@
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="770" y="90" width="172" height="47"/>
+                          <AbsoluteConstraints x="570" y="10" width="172" height="47"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -3440,21 +3470,75 @@
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="950" y="90" width="172" height="47"/>
+                          <AbsoluteConstraints x="390" y="10" width="172" height="47"/>
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="Lbl_Header_CodeStorm2">
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="Pnl_Navegacion">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="770" y="90" width="406" height="70"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                    <Property name="useNullLayout" type="boolean" value="false"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="Btn_Anterior">
                       <Properties>
-                        <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Apolo_Header_CodeStorm.png"/>
+                          <Image iconType="3" name="/Resources/CodeStorm/Anterior_Off.png"/>
                         </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
+                        </Property>
+                        <Property name="borderPainted" type="boolean" value="false"/>
+                        <Property name="contentAreaFilled" type="boolean" value="false"/>
+                        <Property name="focusable" type="boolean" value="false"/>
                         <Property name="horizontalTextPosition" type="int" value="0"/>
+                        <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/Resources/CodeStorm/Anterior_On.png"/>
+                        </Property>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_AnteriorActionPerformed"/>
+                      </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="22" y="20" width="1115" height="55"/>
+                          <AbsoluteConstraints x="190" y="10" width="82" height="47"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="Btn_Siguiente">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/Resources/CodeStorm/Siguiente_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
+                        </Property>
+                        <Property name="borderPainted" type="boolean" value="false"/>
+                        <Property name="contentAreaFilled" type="boolean" value="false"/>
+                        <Property name="focusable" type="boolean" value="false"/>
+                        <Property name="horizontalTextPosition" type="int" value="0"/>
+                        <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/Resources/CodeStorm/Siguiente_On.png"/>
+                        </Property>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_SiguienteActionPerformed"/>
+                      </Events>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                          <AbsoluteConstraints x="280" y="10" width="82" height="47"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -3468,7 +3552,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="0" y="175" width="1176" height="530"/>
+                      <AbsoluteConstraints x="0" y="160" width="1176" height="545"/>
                     </Constraint>
                   </Constraints>
 
@@ -3476,15 +3560,24 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Container class="javax.swing.JScrollPane" name="Scp_Ejercicio1">
+                    <Container class="javax.swing.JPanel" name="Pnl_Ej1">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="f3" green="ea" red="ed" type="rgb"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                          <Border info="null"/>
+                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder justification="1" position="2" title=" Nivel 1 | Ejercicio 1 ">
+                              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder roundedCorners="true" thickness="2">
+                                  <Color PropertyName="color" blue="0" green="0" red="cc" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                              <Font PropertyName="font" name="Tahoma" size="30" style="1"/>
+                              <Color PropertyName="color" blue="0" green="0" red="cc" type="rgb"/>
+                            </TitledBorder>
+                          </Border>
                         </Property>
-                        <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -3492,27 +3585,64 @@
                         </Constraint>
                       </Constraints>
 
-                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                        <Property name="useNullLayout" type="boolean" value="false"/>
+                      </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JLabel" name="Lbl_Ejercicio">
+                        <Container class="javax.swing.JScrollPane" name="Scp_Ej1">
                           <Properties>
                             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="f3" green="ea" red="ed" type="rgb"/>
                             </Property>
-                            <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/Resources/CodeStorm/Ejercicio1.png"/>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="null"/>
                             </Property>
-                            <Property name="horizontalTextPosition" type="int" value="0"/>
-                            <Property name="opaque" type="boolean" value="true"/>
                           </Properties>
-                        </Component>
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="20" y="60" width="1080" height="440"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JLabel" name="Lbl_Ejercicio1">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                                </Property>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Resources/CodeStorm/Lbl_Ejercicio1.png"/>
+                                </Property>
+                                <Property name="horizontalTextPosition" type="int" value="0"/>
+                                <Property name="opaque" type="boolean" value="true"/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="Pnl_Codigo1">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder justification="1" position="2" title=" Nivel 1 | Ejercicio 1 ">
+                              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder roundedCorners="true" thickness="2">
+                                  <Color PropertyName="color" blue="0" green="0" red="cc" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                              <Font PropertyName="font" name="Tahoma" size="30" style="1"/>
+                              <Color PropertyName="color" blue="0" green="0" red="cc" type="rgb"/>
+                            </TitledBorder>
+                          </Border>
                         </Property>
                       </Properties>
                       <Constraints>
@@ -3539,7 +3669,7 @@
                           </AuxValues>
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                              <AbsoluteConstraints x="40" y="80" width="1050" height="460"/>
+                              <AbsoluteConstraints x="20" y="60" width="1080" height="440"/>
                             </Constraint>
                           </Constraints>
 
@@ -3552,12 +3682,88 @@
                                 </Property>
                                 <Property name="columns" type="int" value="20"/>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Consolas" size="16" style="0"/>
+                                  <Font name="Consolas" size="18" style="0"/>
                                 </Property>
                                 <Property name="lineWrap" type="boolean" value="true"/>
                                 <Property name="rows" type="int" value="5"/>
                                 <Property name="tabSize" type="int" value="4"/>
                                 <Property name="wrapStyleWord" type="boolean" value="true"/>
+                                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                  <Border info="null"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="Pnl_Solucion1">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder justification="1" position="2" title=" Nivel 1 | Ejercicio 1 ">
+                              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder roundedCorners="true" thickness="2">
+                                  <Color PropertyName="color" blue="0" green="0" red="cc" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                              <Font PropertyName="font" name="Tahoma" size="30" style="1"/>
+                              <Color PropertyName="color" blue="0" green="0" red="cc" type="rgb"/>
+                            </TitledBorder>
+                          </Border>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                          <AbsoluteConstraints x="30" y="0" width="1110" height="510"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                        <Property name="useNullLayout" type="boolean" value="false"/>
+                      </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JScrollPane" name="Scp_Solucion1">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                            </Property>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="null"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="20" y="60" width="1080" height="440"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTextArea" name="Txa_Solucion1">
+                              <Properties>
+                                <Property name="editable" type="boolean" value="false"/>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                                </Property>
+                                <Property name="columns" type="int" value="20"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Consolas" size="18" style="0"/>
+                                </Property>
+                                <Property name="lineWrap" type="boolean" value="true"/>
+                                <Property name="rows" type="int" value="5"/>
+                                <Property name="tabSize" type="int" value="4"/>
+                                <Property name="text" type="java.lang.String" value="import java.util.Scanner;&#xa;&#xa;public class Main {&#xa;&#xa;    public static void main(String[] args) {&#xa;        Scanner myScanner=new Scanner(System.in);&#xa;        int t;&#xa;        int a,b;&#xa;        t=myScanner.nextInt();&#xa;        for(int i=0;i&lt;t;i++){&#xa;            a=myScanner.nextInt();&#xa;            b=myScanner.nextInt();&#xa;            if (a&lt;b) {&#xa;                System.out.println(&quot;&lt;&quot;);&#xa;            }&#xa;            else if(a&gt;b){&#xa;                System.out.println(&quot;&gt;&quot;);&#xa;            }&#xa;            else{&#xa;                System.out.println(&quot;=&quot;);&#xa;            }&#xa;        }&#xa;    }&#xa;&#xa;}"/>
+                                <Property name="wrapStyleWord" type="boolean" value="true"/>
+                                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                  <Border info="null"/>
+                                </Property>
                               </Properties>
                             </Component>
                           </SubComponents>
@@ -3574,13 +3780,226 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="0" y="150" width="1176" height="555"/>
+                      <AbsoluteConstraints x="0" y="160" width="1176" height="545"/>
                     </Constraint>
                   </Constraints>
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JPanel" name="Pnl_Ej2">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder justification="1" position="2" title=" Nivel 1 | Ejercicio 2  ">
+                              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder roundedCorners="true" thickness="2">
+                                  <Color PropertyName="color" blue="0" green="0" red="cc" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                              <Font PropertyName="font" name="Tahoma" size="30" style="1"/>
+                              <Color PropertyName="color" blue="0" green="0" red="cc" type="rgb"/>
+                            </TitledBorder>
+                          </Border>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                          <AbsoluteConstraints x="30" y="0" width="1110" height="510"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                        <Property name="useNullLayout" type="boolean" value="false"/>
+                      </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JScrollPane" name="Scp_Ej2">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                            </Property>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="null"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="20" y="60" width="1080" height="440"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JLabel" name="Lbl_Ejercicio2">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                                </Property>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Tahoma" size="30" style="1"/>
+                                </Property>
+                                <Property name="horizontalAlignment" type="int" value="2"/>
+                                <Property name="text" type="java.lang.String" value="Label de Ejercicio 2"/>
+                                <Property name="horizontalTextPosition" type="int" value="0"/>
+                                <Property name="opaque" type="boolean" value="true"/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="Pnl_Codigo2">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder justification="1" position="2" title=" Nivel 1 | Ejercicio 2 ">
+                              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder roundedCorners="true" thickness="2">
+                                  <Color PropertyName="color" blue="0" green="0" red="cc" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                              <Font PropertyName="font" name="Tahoma" size="30" style="1"/>
+                              <Color PropertyName="color" blue="0" green="0" red="cc" type="rgb"/>
+                            </TitledBorder>
+                          </Border>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                          <AbsoluteConstraints x="30" y="0" width="1110" height="510"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                        <Property name="useNullLayout" type="boolean" value="false"/>
+                      </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JScrollPane" name="Scp_Codigo2">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                            </Property>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="null"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="20" y="60" width="1080" height="440"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTextArea" name="Txa_Codigo2">
+                              <Properties>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                                </Property>
+                                <Property name="columns" type="int" value="20"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Consolas" size="18" style="0"/>
+                                </Property>
+                                <Property name="lineWrap" type="boolean" value="true"/>
+                                <Property name="rows" type="int" value="5"/>
+                                <Property name="tabSize" type="int" value="4"/>
+                                <Property name="wrapStyleWord" type="boolean" value="true"/>
+                                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                  <Border info="null"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="Pnl_Solucion2">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder justification="1" position="2" title=" Nivel 1 | Ejercicio 2 ">
+                              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder roundedCorners="true" thickness="2">
+                                  <Color PropertyName="color" blue="0" green="0" red="cc" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                              <Font PropertyName="font" name="Tahoma" size="30" style="1"/>
+                              <Color PropertyName="color" blue="0" green="0" red="cc" type="rgb"/>
+                            </TitledBorder>
+                          </Border>
+                        </Property>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                          <AbsoluteConstraints x="30" y="0" width="1110" height="510"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                        <Property name="useNullLayout" type="boolean" value="false"/>
+                      </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JScrollPane" name="Scp_Solucion2">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                            </Property>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="null"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                              <AbsoluteConstraints x="20" y="60" width="1080" height="440"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JTextArea" name="Txa_Solucion2">
+                              <Properties>
+                                <Property name="editable" type="boolean" value="false"/>
+                                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                                  <Color blue="f3" green="ea" red="ed" type="rgb"/>
+                                </Property>
+                                <Property name="columns" type="int" value="20"/>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Consolas" size="18" style="0"/>
+                                </Property>
+                                <Property name="lineWrap" type="boolean" value="true"/>
+                                <Property name="rows" type="int" value="5"/>
+                                <Property name="tabSize" type="int" value="4"/>
+                                <Property name="text" type="java.lang.String" value="import java.util.Scanner;&#xa;&#xa;public class Main {&#xa;&#xa;    public static void main(String[] args) {&#xa;        Scanner myScanner=new Scanner(System.in);&#xa;        int t;&#xa;        int a,b;&#xa;        t=myScanner.nextInt();&#xa;        for(int i=0;i&lt;t;i++){&#xa;            a=myScanner.nextInt();&#xa;            b=myScanner.nextInt();&#xa;            if (a&lt;b) {&#xa;                System.out.println(&quot;&lt;&quot;);&#xa;            }&#xa;            else if(a&gt;b){&#xa;                System.out.println(&quot;&gt;&quot;);&#xa;            }&#xa;            else{&#xa;                System.out.println(&quot;=&quot;);&#xa;            }&#xa;        }&#xa;    }&#xa;&#xa;}"/>
+                                <Property name="wrapStyleWord" type="boolean" value="true"/>
+                                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                                  <Border info="null"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="Pnl_Ejercicio3">
                   <Properties>
@@ -3590,7 +4009,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="0" y="150" width="1176" height="555"/>
+                      <AbsoluteConstraints x="0" y="160" width="1176" height="545"/>
                     </Constraint>
                   </Constraints>
 
@@ -3606,7 +4025,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="0" y="150" width="1176" height="555"/>
+                      <AbsoluteConstraints x="0" y="160" width="1176" height="545"/>
                     </Constraint>
                   </Constraints>
 
@@ -3622,7 +4041,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="0" y="150" width="1176" height="555"/>
+                      <AbsoluteConstraints x="0" y="160" width="1176" height="545"/>
                     </Constraint>
                   </Constraints>
 
@@ -3638,7 +4057,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="0" y="150" width="1176" height="555"/>
+                      <AbsoluteConstraints x="0" y="160" width="1176" height="545"/>
                     </Constraint>
                   </Constraints>
 
@@ -3654,7 +4073,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="0" y="150" width="1176" height="555"/>
+                      <AbsoluteConstraints x="0" y="160" width="1176" height="545"/>
                     </Constraint>
                   </Constraints>
 
@@ -3670,7 +4089,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="0" y="150" width="1176" height="555"/>
+                      <AbsoluteConstraints x="0" y="160" width="1176" height="545"/>
                     </Constraint>
                   </Constraints>
 
@@ -3686,7 +4105,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="0" y="150" width="1176" height="555"/>
+                      <AbsoluteConstraints x="0" y="160" width="1176" height="545"/>
                     </Constraint>
                   </Constraints>
 
@@ -3702,7 +4121,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="0" y="150" width="1176" height="555"/>
+                      <AbsoluteConstraints x="0" y="160" width="1176" height="545"/>
                     </Constraint>
                   </Constraints>
 
@@ -3718,7 +4137,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="0" y="150" width="1176" height="555"/>
+                      <AbsoluteConstraints x="0" y="160" width="1176" height="545"/>
                     </Constraint>
                   </Constraints>
 
@@ -3734,7 +4153,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="0" y="150" width="1176" height="555"/>
+                      <AbsoluteConstraints x="0" y="160" width="1176" height="545"/>
                     </Constraint>
                   </Constraints>
 
