@@ -1928,12 +1928,8 @@ public class Home_Apolo extends javax.swing.JFrame {
 
     private void Button_ProgramarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_ProgramarActionPerformed
         if (Button_Programar.isSelected()) {
-<<<<<<< HEAD
             CodeEditor cd = new CodeEditor();
-=======
             apagarSecciones(2);
-
->>>>>>> Bryann
             Toolkit t = Toolkit.getDefaultToolkit();
             Dimension screenSize = t.getScreenSize();
             Label_Programar.setText("Su Resolución de Pantalla es " + screenSize.width + " x " + screenSize.height);
