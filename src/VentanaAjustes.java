@@ -1,11 +1,7 @@
 
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.FontFormatException;
-import java.io.File;
-import java.io.IOException;
 import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
 import Tipografias.Fuentes;
 
 public class VentanaAjustes extends javax.swing.JFrame {
@@ -13,17 +9,20 @@ public class VentanaAjustes extends javax.swing.JFrame {
     static public Home_Apolo Home = new Home_Apolo();
     Fuentes Euclid = new Fuentes();
 
+    // Constructor
     public VentanaAjustes() {
         initComponents();
-        setVentana();
+        configurarVentana();
         cargarFuente();
     }
 
-    private void setVentana() {
+    // Configurar las caracteristicas de la Ventana de Ajustes
+    private void configurarVentana() {
         this.setLocationRelativeTo(null);
         setIconImage(new ImageIcon(getClass().getResource("/Resources/Apolo_Icono_Blanco_40px.png")).getImage()); // Agregar icono de Apolo
     }
 
+    // Cargar la tipografia personalizada
     private void cargarFuente() {
         Font Regular14p = Euclid.fuente(Euclid.EUCR, 0, 14);
 
