@@ -2075,14 +2075,8 @@ public class Home_Apolo extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_Btn_AprenderActionPerformed
 
-<<<<<<< HEAD
-    private void Button_ProgramarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_ProgramarActionPerformed
-        if (Button_Programar.isSelected()) {
-            CodeEditor cd = new CodeEditor();
-=======
     private void Btn_ProgramarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_ProgramarActionPerformed
         if (Btn_Programar.isSelected()) {
->>>>>>> Bryann
             apagarSecciones(2);
             Toolkit t = Toolkit.getDefaultToolkit();
             Dimension screenSize = t.getScreenSize();
