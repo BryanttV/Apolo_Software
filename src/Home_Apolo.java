@@ -2077,6 +2077,8 @@ public class Home_Apolo extends javax.swing.JFrame {
 
     private void Btn_ProgramarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_ProgramarActionPerformed
         if (Btn_Programar.isSelected()) {
+            Editor_de_codigo edc = new Editor_de_codigo();
+            edc.setVisible(true);
             apagarSecciones(2);
             Toolkit t = Toolkit.getDefaultToolkit();
             Dimension screenSize = t.getScreenSize();

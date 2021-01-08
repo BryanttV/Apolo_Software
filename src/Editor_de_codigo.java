@@ -3,14 +3,13 @@ import GUI.SimpleWebBrowser;
 
 public class Editor_de_codigo extends javax.swing.JFrame {
 
-    static SimpleWebBrowser s= new SimpleWebBrowser();
-    
+    static SimpleWebBrowser s = new SimpleWebBrowser();
+
     public Editor_de_codigo() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
 
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -137,7 +136,6 @@ public class Editor_de_codigo extends javax.swing.JFrame {
         s.run("https://onlinejudge.org/");
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
