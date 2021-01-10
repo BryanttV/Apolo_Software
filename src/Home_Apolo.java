@@ -50,7 +50,8 @@ public class Home_Apolo extends javax.swing.JFrame {
 
     // Cargar fuente personalizada del paquete Tipografia
     private void cargarFuente() {
-        // Lista de Seccion de Aprender
+
+        // Lista de Componentes de la Seccion de Aprender
         List<Component> aprenderList = getAllComponents(Pnl_Aprender);
         for (Component componente : aprenderList) {
             if (componente instanceof JLabel) {
@@ -59,7 +60,7 @@ public class Home_Apolo extends javax.swing.JFrame {
                 lbl.setForeground(verde);
             }
         }
-        // Lista de Seccion de Historia para 
+        // Lista de Componentes de la Seccion de Historia 
         List<Component> historiaList = getAllComponents(Pnl_Historia);
         for (Component componente : historiaList) {
             if (componente instanceof JLabel) {
@@ -97,7 +98,7 @@ public class Home_Apolo extends javax.swing.JFrame {
         }
     }
 
-    // Obtener todos los componentes del JFrame ¨*IMPORTANTE
+    // Obtener todos los componentes del JFrame ¨**IMPORTANTE**
     private List<Component> getAllComponents(final Container c) {
         Component[] comps = c.getComponents();
         List<Component> compList = new ArrayList<>();
@@ -110,7 +111,7 @@ public class Home_Apolo extends javax.swing.JFrame {
         return compList;
     }
 
-    // Configurar las caracteristicas de la Ventana Principal
+    // Configurar las Caracteristicas de la Ventana Principal
     private void configurarVentana() {
         this.setExtendedState(JFrame.MAXIMIZED_BOTH); // Maximizar a pantalla completa
         this.getContentPane().setBackground(Color.red); // Color de Fondo del JFrame
@@ -221,23 +222,45 @@ public class Home_Apolo extends javax.swing.JFrame {
         }
     }
 
-    // Validar seleccion de Panel en la seccion de CodeStorm
-    private int validarPanel() {
-        if (Pnl_Ejercicio1.isVisible()) {
-            return 1;
-        } else if (Pnl_Ejercicio2.isVisible()) {
-            return 2;
-        } else {
-            return 3;
-        }
-    }
-
     // Inicializar botones según navegacion en seccion de CodeStorm
     private void inicializarBotonesCodeStorm() {
         Btn_Ejercicio.doClick();
         Btn_Ejercicio.setSelected(true);
         Btn_Codigo.setSelected(false);
         Btn_Solucion.setSelected(false);
+    }
+
+    // Obtener Paneles de los ejercicios en la seccion de CodeStorm
+    private Component[] obtenerPanelesEjercicios(int num) {
+
+        Component[] componentes = Pnl_Ejercicios.getComponents();
+
+        if (num == 2) {
+            return componentes;
+        }
+
+        List<JPanel> paneles = new ArrayList<>();
+        for (Component cmp : componentes) {
+            if (cmp instanceof JPanel) {
+                JPanel pnl = (JPanel) cmp;
+                paneles.add(pnl);
+            }
+        }
+
+        for (int i = 0; i < paneles.size(); i++) {
+            if (paneles.get(i).isVisible()) {
+                return paneles.get(i).getComponents();
+            }
+        }
+        return null;
+    }
+
+    // Deshabilitar paneles comunes de la seccion de CodeStorm
+    private void paneles_ON_OFF() {
+        Pnl_General.setVisible(true);
+        Pnl_Ejercicios.setVisible(true);
+        Pnl_ListadoEjercicios.setVisible(false);
+        inicializarBotonesCodeStorm();
     }
 
     @SuppressWarnings("unchecked")
@@ -388,6 +411,7 @@ public class Home_Apolo extends javax.swing.JFrame {
         Scp_Introduccion = new javax.swing.JScrollPane();
         Pnl_Introduccion = new javax.swing.JPanel();
         Lbl_Header_CodeStorm1 = new javax.swing.JLabel();
+        Btn_Introduccion_Siguiente = new javax.swing.JButton();
         Pnl_General = new javax.swing.JPanel();
         Pnl_Header = new javax.swing.JPanel();
         Lbl_Header_CodeStorm2 = new javax.swing.JLabel();
@@ -1869,6 +1893,23 @@ public class Home_Apolo extends javax.swing.JFrame {
         Lbl_Header_CodeStorm1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Apolo_Header_CodeStorm.png"))); // NOI18N
         Pnl_Introduccion.add(Lbl_Header_CodeStorm1, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 20, 1115, 55));
 
+        Btn_Introduccion_Siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/CodeStorm/Siguiente_Ejercicios_Off.png"))); // NOI18N
+        Btn_Introduccion_Siguiente.setBorder(null);
+        Btn_Introduccion_Siguiente.setBorderPainted(false);
+        Btn_Introduccion_Siguiente.setContentAreaFilled(false);
+        Btn_Introduccion_Siguiente.setFocusPainted(false);
+        Btn_Introduccion_Siguiente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Btn_Introduccion_Siguiente.setMaximumSize(new java.awt.Dimension(254, 64));
+        Btn_Introduccion_Siguiente.setMinimumSize(new java.awt.Dimension(254, 64));
+        Btn_Introduccion_Siguiente.setPreferredSize(new java.awt.Dimension(254, 64));
+        Btn_Introduccion_Siguiente.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/CodeStorm/Siguiente_Ejercicios_On.png"))); // NOI18N
+        Btn_Introduccion_Siguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_Introduccion_SiguienteActionPerformed(evt);
+            }
+        });
+        Pnl_Introduccion.add(Btn_Introduccion_Siguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 3900, 254, 64));
+
         Scp_Introduccion.setViewportView(Pnl_Introduccion);
 
         Pnl_CodeStorm.add(Scp_Introduccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1176, 706));
@@ -2962,6 +3003,7 @@ public class Home_Apolo extends javax.swing.JFrame {
 
             Toolkit t = Toolkit.getDefaultToolkit();
             Dimension screenSize = t.getScreenSize();
+            // Mostrar la Resolucion de Pantalla del Equipo
             Lbl_Programar.setText("Su Resolución de Pantalla es " + screenSize.width + " x " + screenSize.height + " pixeles");
             Pnl_Programar.setVisible(true);
         } else {
@@ -3176,118 +3218,92 @@ public class Home_Apolo extends javax.swing.JFrame {
 
     private void Btn_Nivel1_Ejercicio1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel1_Ejercicio1ActionPerformed
         if (evt.getSource() == Btn_Nivel1_Ejercicio1) {
-            Pnl_General.setVisible(true);
-            Pnl_Ejercicios.setVisible(true);
             Pnl_Ejercicio1.setVisible(true);
-            Pnl_ListadoEjercicios.setVisible(false);
-            inicializarBotonesCodeStorm();
+            paneles_ON_OFF();
         }
     }//GEN-LAST:event_Btn_Nivel1_Ejercicio1ActionPerformed
 
     private void Btn_Nivel1_Ejercicio2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel1_Ejercicio2ActionPerformed
         if (evt.getSource() == Btn_Nivel1_Ejercicio2) {
-            inicializarBotonesCodeStorm();
-            Pnl_General.setVisible(true);
             Pnl_Ejercicio2.setVisible(true);
-            Pnl_ListadoEjercicios.setVisible(false);
+            paneles_ON_OFF();
         }
     }//GEN-LAST:event_Btn_Nivel1_Ejercicio2ActionPerformed
 
     private void Btn_Nivel1_Ejercicio3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel1_Ejercicio3ActionPerformed
         if (evt.getSource() == Btn_Nivel1_Ejercicio3) {
-            inicializarBotonesCodeStorm();
-            Pnl_General.setVisible(true);
             Pnl_Ejercicio3.setVisible(true);
-            Pnl_ListadoEjercicios.setVisible(false);
+            paneles_ON_OFF();
         }
     }//GEN-LAST:event_Btn_Nivel1_Ejercicio3ActionPerformed
 
     private void Btn_Nivel1_Ejercicio4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel1_Ejercicio4ActionPerformed
         if (evt.getSource() == Btn_Nivel1_Ejercicio4) {
-            inicializarBotonesCodeStorm();
-            Pnl_General.setVisible(true);
             Pnl_Ejercicio4.setVisible(true);
-            Pnl_ListadoEjercicios.setVisible(false);
+            paneles_ON_OFF();
         }
     }//GEN-LAST:event_Btn_Nivel1_Ejercicio4ActionPerformed
 
     private void Btn_IntroduccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_IntroduccionActionPerformed
         if (evt.getSource() == Btn_Introduccion) {
             Scp_Introduccion.setVisible(true);
-            Scp_Introduccion.getVerticalScrollBar().setUI(Barra);
             Pnl_ListadoEjercicios.setVisible(false);
         }
     }//GEN-LAST:event_Btn_IntroduccionActionPerformed
 
     private void Btn_Nivel2_Ejercicio1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel2_Ejercicio1ActionPerformed
         if (evt.getSource() == Btn_Nivel2_Ejercicio1) {
-            inicializarBotonesCodeStorm();
-            Pnl_General.setVisible(true);
             Pnl_Ejercicio5.setVisible(true);
-            Pnl_ListadoEjercicios.setVisible(false);
+            paneles_ON_OFF();
         }
     }//GEN-LAST:event_Btn_Nivel2_Ejercicio1ActionPerformed
 
     private void Btn_Nivel2_Ejercicio2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel2_Ejercicio2ActionPerformed
         if (evt.getSource() == Btn_Nivel2_Ejercicio2) {
-            inicializarBotonesCodeStorm();
-            Pnl_General.setVisible(true);
             Pnl_Ejercicio6.setVisible(true);
-            Pnl_ListadoEjercicios.setVisible(false);
+            paneles_ON_OFF();
         }
     }//GEN-LAST:event_Btn_Nivel2_Ejercicio2ActionPerformed
 
     private void Btn_Nivel2_Ejercicio3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel2_Ejercicio3ActionPerformed
         if (evt.getSource() == Btn_Nivel2_Ejercicio3) {
-            inicializarBotonesCodeStorm();
-            Pnl_General.setVisible(true);
             Pnl_Ejercicio7.setVisible(true);
-            Pnl_ListadoEjercicios.setVisible(false);
+            paneles_ON_OFF();
         }
     }//GEN-LAST:event_Btn_Nivel2_Ejercicio3ActionPerformed
 
     private void Btn_Nivel2_Ejercicio4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel2_Ejercicio4ActionPerformed
         if (evt.getSource() == Btn_Nivel2_Ejercicio4) {
-            inicializarBotonesCodeStorm();
-            Pnl_General.setVisible(true);
             Pnl_Ejercicio8.setVisible(true);
-            Pnl_ListadoEjercicios.setVisible(false);
+            paneles_ON_OFF();
         }
     }//GEN-LAST:event_Btn_Nivel2_Ejercicio4ActionPerformed
 
     private void Btn_Nivel3_Ejercicio1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel3_Ejercicio1ActionPerformed
         if (evt.getSource() == Btn_Nivel3_Ejercicio1) {
-            inicializarBotonesCodeStorm();
-            Pnl_General.setVisible(true);
             Pnl_Ejercicio9.setVisible(true);
-            Pnl_ListadoEjercicios.setVisible(false);
+            paneles_ON_OFF();
         }
     }//GEN-LAST:event_Btn_Nivel3_Ejercicio1ActionPerformed
 
     private void Btn_Nivel3_Ejercicio2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel3_Ejercicio2ActionPerformed
         if (evt.getSource() == Btn_Nivel3_Ejercicio2) {
-            inicializarBotonesCodeStorm();
-            Pnl_General.setVisible(true);
             Pnl_Ejercicio10.setVisible(true);
-            Pnl_ListadoEjercicios.setVisible(false);
+            paneles_ON_OFF();
         }
     }//GEN-LAST:event_Btn_Nivel3_Ejercicio2ActionPerformed
 
     private void Btn_Nivel3_Ejercicio3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel3_Ejercicio3ActionPerformed
         if (evt.getSource() == Btn_Nivel3_Ejercicio3) {
-            inicializarBotonesCodeStorm();
-            Pnl_General.setVisible(true);
             Pnl_Ejercicio11.setVisible(true);
-            Pnl_ListadoEjercicios.setVisible(false);
+            paneles_ON_OFF();
         }
     }//GEN-LAST:event_Btn_Nivel3_Ejercicio3ActionPerformed
 
     private void Btn_Nivel3_Ejercicio4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel3_Ejercicio4ActionPerformed
         if (evt.getSource() == Btn_Nivel3_Ejercicio4) {
-            inicializarBotonesCodeStorm();
-            Pnl_General.setVisible(true);
             Pnl_Ejercicio12.setVisible(true);
-            Pnl_ListadoEjercicios.setVisible(false);
+            paneles_ON_OFF();
         }
     }//GEN-LAST:event_Btn_Nivel3_Ejercicio4ActionPerformed
 
@@ -3326,24 +3342,13 @@ public class Home_Apolo extends javax.swing.JFrame {
     private void Btn_EjercicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_EjercicioActionPerformed
         if (evt.getSource() == Btn_Ejercicio) {
 
-            Component[] componentes = Pnl_Ejercicios.getComponents();
-            List<JPanel> paneles = new ArrayList<>();
+            // Obtener paneles hijos del Panel visible
+            Component[] paneles = obtenerPanelesEjercicios(1);
 
-            for (Component cmp : componentes) {
-                if (cmp instanceof JPanel) {
-                    JPanel pnl = (JPanel) cmp;
-                    paneles.add(pnl);
-                }
-            }
+            paneles[0].setVisible(true);
+            paneles[1].setVisible(false);
+            paneles[2].setVisible(false);
 
-            for (int i = 0; i < paneles.size(); i++) {
-                if (paneles.get(i).isVisible()) {
-                    Component[] cmps = paneles.get(i).getComponents();
-                    cmps[0].setVisible(true);
-                    cmps[1].setVisible(false);
-                    cmps[2].setVisible(false);
-                }
-            }
             DeshabilitarBotonesCodeStorm(0);
         }
     }//GEN-LAST:event_Btn_EjercicioActionPerformed
@@ -3354,82 +3359,80 @@ public class Home_Apolo extends javax.swing.JFrame {
 
     private void Btn_CodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_CodigoActionPerformed
         if (evt.getSource() == Btn_Codigo) {
-            Component[] componentes = Pnl_Ejercicios.getComponents();
-            List<JPanel> paneles = new ArrayList<>();
 
-            for (Component cmp : componentes) {
-                if (cmp instanceof JPanel) {
-                    JPanel pnl = (JPanel) cmp;
-                    paneles.add(pnl);
-                }
-            }
+            // Obtener paneles hijos del Panel visible
+            Component[] paneles = obtenerPanelesEjercicios(1);
 
-            for (int i = 0; i < paneles.size(); i++) {
-                if (paneles.get(i).isVisible()) {
-                    Component[] cmps = paneles.get(i).getComponents();
-                    cmps[0].setVisible(false);
-                    cmps[1].setVisible(true);
-                    cmps[2].setVisible(false);
-                }
-            }
+            paneles[0].setVisible(false);
+            paneles[1].setVisible(true);
+            paneles[2].setVisible(false);
+
             DeshabilitarBotonesCodeStorm(1);
         }
     }//GEN-LAST:event_Btn_CodigoActionPerformed
 
     private void Btn_SolucionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_SolucionActionPerformed
         if (evt.getSource() == Btn_Solucion) {
-            
-            Component[] componentes = Pnl_Ejercicios.getComponents();
-            List<JPanel> paneles = new ArrayList<>();
 
-            for (Component cmp : componentes) {
-                if (cmp instanceof JPanel) {
-                    JPanel pnl = (JPanel) cmp;
-                    paneles.add(pnl);
-                }
-            }
+            // Obtener paneles hijos del Panel visible
+            Component[] paneles = obtenerPanelesEjercicios(1);
 
-            for (int i = 0; i < paneles.size(); i++) {
-                if (paneles.get(i).isVisible()) {
-                    Component[] cmps = paneles.get(i).getComponents();
-                    cmps[0].setVisible(false);
-                    cmps[1].setVisible(false);
-                    cmps[2].setVisible(true);
-                }
-            }
+            paneles[0].setVisible(false);
+            paneles[1].setVisible(false);
+            paneles[2].setVisible(true);
+
             DeshabilitarBotonesCodeStorm(2);
         }
     }//GEN-LAST:event_Btn_SolucionActionPerformed
 
     private void Btn_AnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_AnteriorActionPerformed
         if (evt.getSource() == Btn_Anterior) {
-            int num = validarPanel();
-            if (num == 2) {
-                Pnl_Ejercicio1.setVisible(true);
-                Pnl_Ejercicio2.setVisible(false);
-                inicializarBotonesCodeStorm();
-            } else if (num == 3) {
-                Pnl_Ejercicio2.setVisible(true);
-                Pnl_Ejercicio3.setVisible(false);
-                inicializarBotonesCodeStorm();
+
+            // Obtener panel activo
+            Component[] paneles = obtenerPanelesEjercicios(2);
+
+            // Habilitar y Deshabilitar paneles segun Panel Activo
+            for (int i = 0; i < paneles.length; i++) {
+                if (paneles[0].isVisible()) {
+                    continue;
+                }
+                if (paneles[i].isVisible()) {
+                    paneles[i - 1].setVisible(true);
+                    paneles[i].setVisible(false);
+                }
             }
+
+            inicializarBotonesCodeStorm();
         }
     }//GEN-LAST:event_Btn_AnteriorActionPerformed
 
     private void Btn_SiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_SiguienteActionPerformed
         if (evt.getSource() == Btn_Siguiente) {
-            int num = validarPanel();
-            if (num == 1) {
-                Pnl_Ejercicio1.setVisible(false);
-                Pnl_Ejercicio2.setVisible(true);
-                inicializarBotonesCodeStorm();
-            } else if (num == 2) {
-                Pnl_Ejercicio2.setVisible(false);
-                Pnl_Ejercicio3.setVisible(true);
-                inicializarBotonesCodeStorm();
+
+            // Obtener panel activo
+            Component[] paneles = obtenerPanelesEjercicios(2);
+
+            // Habilitar y Deshabilitar paneles según Panel Activo
+            for (int i = 0; i < paneles.length - 1; i++) {
+                if (paneles[i].isVisible()) {
+                    paneles[i].setVisible(false);
+                    paneles[i + 1].setVisible(true);
+                    break;
+                }
             }
+
+            inicializarBotonesCodeStorm();
         }
+
     }//GEN-LAST:event_Btn_SiguienteActionPerformed
+
+    private void Btn_Introduccion_SiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Introduccion_SiguienteActionPerformed
+        if (evt.getSource() == Btn_Introduccion_Siguiente) {
+            Scp_Introduccion.setVisible(false);
+            Pnl_Ejercicio1.setVisible(true);
+            paneles_ON_OFF();
+        }
+    }//GEN-LAST:event_Btn_Introduccion_SiguienteActionPerformed
 
     public static void main(String args[]) {
         try {
@@ -3437,7 +3440,6 @@ public class Home_Apolo extends javax.swing.JFrame {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
-
                 }
             }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
@@ -3484,6 +3486,7 @@ public class Home_Apolo extends javax.swing.JFrame {
     private javax.swing.JToggleButton Btn_Enviar;
     private javax.swing.JToggleButton Btn_Historia;
     private javax.swing.JButton Btn_Introduccion;
+    private javax.swing.JButton Btn_Introduccion_Siguiente;
     private javax.swing.JButton Btn_Nivel1_Ejercicio1;
     private javax.swing.JButton Btn_Nivel1_Ejercicio2;
     private javax.swing.JButton Btn_Nivel1_Ejercicio3;
