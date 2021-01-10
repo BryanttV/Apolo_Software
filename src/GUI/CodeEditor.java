@@ -52,7 +52,7 @@ public class CodeEditor extends JFrame {
         //ejecutando navegador propio
         pdfbutton.addActionListener((ActionEvent e) -> {
             //cambiar URL por la necesaria
-            s.run("https://concepto.de/wp-content/uploads/2020/01/vectores-ejemplos-e1578408963958.jpg");
+            s.run("https://www.google.com");
         });
 
         JButton initbutton = new JButton("Limpiar");
