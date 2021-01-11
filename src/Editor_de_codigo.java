@@ -1,14 +1,61 @@
 
 import GUI.SimpleWebBrowser;
 import com.Ostermiller.Syntax.HighlightedDocument;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.ClipboardOwner;
+import java.awt.datatransfer.StringSelection;
+import java.awt.datatransfer.Transferable;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 
-public class Editor_de_codigo extends javax.swing.JFrame {
+public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwner {
 
-    static SimpleWebBrowser s = new SimpleWebBrowser();
+    SimpleWebBrowser s = new SimpleWebBrowser();
+    JFileChooser seleccion = new JFileChooser();
+    File archivo;
+    FileInputStream entrada;
+    FileOutputStream salida;
 
     public Editor_de_codigo() {
         initComponents();
         this.setLocationRelativeTo(null);
+    }
+
+    public String Openfile(File archivo) {
+
+        String documento = "";
+        try {
+            entrada = new FileInputStream(archivo);
+            int ascci;
+            while ((ascci = entrada.read()) != -1) {
+                char caracter = (char) ascci;
+                documento += caracter;
+            }
+        } catch (Exception e) {
+        }
+        return documento;
+    }
+    
+    public String Savefile(File archivo,String documento){
+        String mensaje = null;
+        try {
+            salida = new FileOutputStream(archivo);
+            byte[] bytxt= documento.getBytes();
+            salida.write(bytxt);
+            mensaje="Codigo Guardado exitosamente";
+        } catch (Exception e) {
+        }
+        return mensaje;
+    }
+
+    public void ClipBoard(String texto) {
+
+        StringSelection txt = new StringSelection(texto);
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(txt, this);
     }
 
     @SuppressWarnings("unchecked")
@@ -17,9 +64,13 @@ public class Editor_de_codigo extends javax.swing.JFrame {
 
         Pnl_Principal = new javax.swing.JPanel();
         Pnl_Botones = new javax.swing.JPanel();
+        Btnguardar = new javax.swing.JButton();
+        BtnCopiar = new javax.swing.JButton();
+        BtnEjecutar = new javax.swing.JButton();
+        BtnAbrir = new javax.swing.JButton();
         Pnl_Texto = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        Campocodigo = new javax.swing.JTextPane();
         Pnl_Salida = new javax.swing.JPanel();
         Scp_Salida = new javax.swing.JScrollPane();
         Txa_Salida = new javax.swing.JTextArea();
@@ -38,6 +89,39 @@ public class Editor_de_codigo extends javax.swing.JFrame {
         Pnl_Botones.setMinimumSize(new java.awt.Dimension(560, 60));
         Pnl_Botones.setPreferredSize(new java.awt.Dimension(560, 60));
         Pnl_Botones.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Btnguardar.setText("Guardar");
+        Btnguardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnguardarActionPerformed(evt);
+            }
+        });
+        Pnl_Botones.add(Btnguardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
+
+        BtnCopiar.setText("Copiar");
+        BtnCopiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnCopiarActionPerformed(evt);
+            }
+        });
+        Pnl_Botones.add(BtnCopiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, -1));
+
+        BtnEjecutar.setText("Ejecutar");
+        BtnEjecutar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnEjecutarActionPerformed(evt);
+            }
+        });
+        Pnl_Botones.add(BtnEjecutar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, -1, -1));
+
+        BtnAbrir.setText("Abrir");
+        BtnAbrir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnAbrirActionPerformed(evt);
+            }
+        });
+        Pnl_Botones.add(BtnAbrir, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, -1, -1));
+
         Pnl_Principal.add(Pnl_Botones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 60));
 
         Pnl_Texto.setBackground(new java.awt.Color(204, 255, 255));
@@ -46,8 +130,8 @@ public class Editor_de_codigo extends javax.swing.JFrame {
         Pnl_Texto.setPreferredSize(new java.awt.Dimension(560, 340));
         Pnl_Texto.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextPane1.setStyledDocument(new HighlightedDocument());
-        jScrollPane1.setViewportView(jTextPane1);
+        Campocodigo.setStyledDocument(new HighlightedDocument());
+        jScrollPane1.setViewportView(Campocodigo);
 
         Pnl_Texto.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 540, 320));
 
@@ -81,6 +165,45 @@ public class Editor_de_codigo extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void BtnCopiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCopiarActionPerformed
+        ClipBoard(Campocodigo.getText());
+    }//GEN-LAST:event_BtnCopiarActionPerformed
+
+    private void BtnEjecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEjecutarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnEjecutarActionPerformed
+
+    private void BtnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnguardarActionPerformed
+        if (seleccion.showDialog(null, "Guardar") == JFileChooser.APPROVE_OPTION) {
+            archivo = seleccion.getSelectedFile();
+            if (archivo.getName().endsWith("txt")) {
+                String documento = Campocodigo.getText();
+                String mensaje = Savefile(archivo, documento);
+                if (mensaje!=null) {
+                    JOptionPane.showMessageDialog(null, mensaje);
+                }else{
+                    JOptionPane.showMessageDialog(null, "Archivo no compatible.");
+                }
+            }else{
+                JOptionPane.showMessageDialog(null, "Guardar Codigo Java");
+            }
+        }
+    }//GEN-LAST:event_BtnguardarActionPerformed
+
+    private void BtnAbrirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAbrirActionPerformed
+        if (seleccion.showDialog(null, "Abrir") == JFileChooser.APPROVE_OPTION) {
+            archivo = seleccion.getSelectedFile();
+            if (archivo.canRead()) {
+                if (archivo.getName().endsWith("txt")) {
+                    String documento = Openfile(archivo);
+                    Campocodigo.setText(documento);
+                }else{
+                    JOptionPane.showMessageDialog(null, "Archivo no compatible.");
+                }
+            }
+        }
+    }//GEN-LAST:event_BtnAbrirActionPerformed
+
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(() -> {
             new Editor_de_codigo().setVisible(true);
@@ -88,6 +211,11 @@ public class Editor_de_codigo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnAbrir;
+    private javax.swing.JButton BtnCopiar;
+    private javax.swing.JButton BtnEjecutar;
+    private javax.swing.JButton Btnguardar;
+    private javax.swing.JTextPane Campocodigo;
     private javax.swing.JPanel Pnl_Botones;
     private javax.swing.JPanel Pnl_Principal;
     private javax.swing.JPanel Pnl_Salida;
@@ -95,6 +223,10 @@ public class Editor_de_codigo extends javax.swing.JFrame {
     private javax.swing.JScrollPane Scp_Salida;
     private javax.swing.JTextArea Txa_Salida;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void lostOwnership(Clipboard clpbrd, Transferable t) {
+        //To change body of generated methods, choose Tools | Templates.
+    }
 }
