@@ -9,24 +9,25 @@ import java.awt.datatransfer.Transferable;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwner {
-
+    
     SimpleWebBrowser s = new SimpleWebBrowser();
     JFileChooser seleccion = new JFileChooser();
     File archivo;
     FileInputStream entrada;
     FileOutputStream salida;
-
+    
     public Editor_de_codigo() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
-
-    public String Openfile(File archivo) {
-
+    
+    public String openFile(File archivo) {
+        
         String documento = "";
         try {
             entrada = new FileInputStream(archivo);
@@ -35,29 +36,30 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
                 char caracter = (char) ascci;
                 documento += caracter;
             }
-        } catch (Exception e) {
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(null, "Error al abrir" + e);
         }
         return documento;
     }
     
-    public String Savefile(File archivo,String documento){
+    public String saveFile(File archivo, String documento) {
         String mensaje = null;
         try {
             salida = new FileOutputStream(archivo);
-            byte[] bytxt= documento.getBytes();
+            byte[] bytxt = documento.getBytes();
             salida.write(bytxt);
-            mensaje="Codigo Guardado exitosamente";
-        } catch (Exception e) {
+            mensaje = "Codigo Guardado exitosamente";
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(null, "Error al guardar" + e);
         }
         return mensaje;
     }
-
-    public void ClipBoard(String texto) {
-
+    
+    public void clipBoard(String texto) {
         StringSelection txt = new StringSelection(texto);
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(txt, this);
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -69,9 +71,9 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
         BtnEjecutar = new javax.swing.JButton();
         BtnAbrir = new javax.swing.JButton();
         BtnLimpiar = new javax.swing.JButton();
-        Pnl_Texto = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        Campocodigo = new javax.swing.JTextPane();
+        Pnl_Codigo = new javax.swing.JPanel();
+        Scp_Codigo = new javax.swing.JScrollPane();
+        Txp_Codigo = new javax.swing.JTextPane();
         Pnl_Salida = new javax.swing.JPanel();
         Scp_Salida = new javax.swing.JScrollPane();
         Txa_Salida = new javax.swing.JTextArea();
@@ -133,18 +135,18 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
 
         Pnl_Principal.add(Pnl_Botones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 60));
 
-        Pnl_Texto.setBackground(new java.awt.Color(204, 255, 255));
-        Pnl_Texto.setMaximumSize(new java.awt.Dimension(560, 340));
-        Pnl_Texto.setMinimumSize(new java.awt.Dimension(560, 340));
-        Pnl_Texto.setPreferredSize(new java.awt.Dimension(560, 340));
-        Pnl_Texto.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        Pnl_Codigo.setBackground(new java.awt.Color(204, 255, 255));
+        Pnl_Codigo.setMaximumSize(new java.awt.Dimension(560, 340));
+        Pnl_Codigo.setMinimumSize(new java.awt.Dimension(560, 340));
+        Pnl_Codigo.setPreferredSize(new java.awt.Dimension(560, 340));
+        Pnl_Codigo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Campocodigo.setStyledDocument(new HighlightedDocument());
-        jScrollPane1.setViewportView(Campocodigo);
+        Txp_Codigo.setStyledDocument(new HighlightedDocument());
+        Scp_Codigo.setViewportView(Txp_Codigo);
 
-        Pnl_Texto.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 540, 320));
+        Pnl_Codigo.add(Scp_Codigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 540, 320));
 
-        Pnl_Principal.add(Pnl_Texto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 560, 340));
+        Pnl_Principal.add(Pnl_Codigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 560, 340));
 
         Pnl_Salida.setBackground(new java.awt.Color(153, 255, 153));
         Pnl_Salida.setMaximumSize(new java.awt.Dimension(560, 130));
@@ -175,7 +177,7 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnCopiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCopiarActionPerformed
-        ClipBoard(Campocodigo.getText());
+        clipBoard(Txp_Codigo.getText());
     }//GEN-LAST:event_BtnCopiarActionPerformed
 
     private void BtnEjecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEjecutarActionPerformed
@@ -186,14 +188,14 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
         if (seleccion.showDialog(null, "Guardar") == JFileChooser.APPROVE_OPTION) {
             archivo = seleccion.getSelectedFile();
             if (archivo.getName().endsWith("txt")) {
-                String documento = Campocodigo.getText();
-                String mensaje = Savefile(archivo, documento);
-                if (mensaje!=null) {
+                String documento = Txp_Codigo.getText();
+                String mensaje = saveFile(archivo, documento);
+                if (mensaje != null) {
                     JOptionPane.showMessageDialog(null, mensaje);
-                }else{
+                } else {
                     JOptionPane.showMessageDialog(null, "Archivo no compatible.");
                 }
-            }else{
+            } else {
                 JOptionPane.showMessageDialog(null, "Guardar Codigo Java");
             }
         }
@@ -203,10 +205,10 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
         if (seleccion.showDialog(null, "Abrir") == JFileChooser.APPROVE_OPTION) {
             archivo = seleccion.getSelectedFile();
             if (archivo.canRead()) {
-                if (archivo.getName().endsWith("txt")) {
-                    String documento = Openfile(archivo);
-                    Campocodigo.setText(documento);
-                }else{
+                if (archivo.getName().endsWith("java")) {
+                    String documento = openFile(archivo);
+                    Txp_Codigo.setText(documento);
+                } else {
                     JOptionPane.showMessageDialog(null, "Archivo no compatible.");
                 }
             }
@@ -214,9 +216,9 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
     }//GEN-LAST:event_BtnAbrirActionPerformed
 
     private void BtnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiarActionPerformed
-        Campocodigo.setText("");
+        Txp_Codigo.setText("");
     }//GEN-LAST:event_BtnLimpiarActionPerformed
-
+    
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(() -> {
             new Editor_de_codigo().setVisible(true);
@@ -229,18 +231,17 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
     private javax.swing.JButton BtnEjecutar;
     private javax.swing.JButton BtnLimpiar;
     private javax.swing.JButton Btnguardar;
-    private javax.swing.JTextPane Campocodigo;
     private javax.swing.JPanel Pnl_Botones;
+    private javax.swing.JPanel Pnl_Codigo;
     private javax.swing.JPanel Pnl_Principal;
     private javax.swing.JPanel Pnl_Salida;
-    private javax.swing.JPanel Pnl_Texto;
+    private javax.swing.JScrollPane Scp_Codigo;
     private javax.swing.JScrollPane Scp_Salida;
     private javax.swing.JTextArea Txa_Salida;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextPane Txp_Codigo;
     // End of variables declaration//GEN-END:variables
 
     @Override
     public void lostOwnership(Clipboard clpbrd, Transferable t) {
-        //To change body of generated methods, choose Tools | Templates.
     }
 }
