@@ -68,7 +68,7 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
         BtnCopiar = new javax.swing.JButton();
         BtnEjecutar = new javax.swing.JButton();
         BtnAbrir = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        BtnLimpiar = new javax.swing.JButton();
         Pnl_Texto = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         Campocodigo = new javax.swing.JTextPane();
@@ -123,13 +123,13 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
         });
         Pnl_Botones.add(BtnAbrir, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, -1, -1));
 
-        jButton1.setText("Limpiar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        BtnLimpiar.setText("Limpiar");
+        BtnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                BtnLimpiarActionPerformed(evt);
             }
         });
-        Pnl_Botones.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 20, -1, -1));
+        Pnl_Botones.add(BtnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 20, -1, -1));
 
         Pnl_Principal.add(Pnl_Botones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 60));
 
@@ -213,9 +213,9 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
         }
     }//GEN-LAST:event_BtnAbrirActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void BtnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiarActionPerformed
         Campocodigo.setText("");
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_BtnLimpiarActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(() -> {
@@ -227,6 +227,7 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
     private javax.swing.JButton BtnAbrir;
     private javax.swing.JButton BtnCopiar;
     private javax.swing.JButton BtnEjecutar;
+    private javax.swing.JButton BtnLimpiar;
     private javax.swing.JButton Btnguardar;
     private javax.swing.JTextPane Campocodigo;
     private javax.swing.JPanel Pnl_Botones;
@@ -235,7 +236,6 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
     private javax.swing.JPanel Pnl_Texto;
     private javax.swing.JScrollPane Scp_Salida;
     private javax.swing.JTextArea Txa_Salida;
-    private javax.swing.JButton jButton1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 
