@@ -21,13 +21,13 @@ import javax.swing.JToggleButton;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
 public class Home_Apolo extends javax.swing.JFrame {
-
+    
     static public VentanaAjustes Ajustes = new VentanaAjustes();
+    static public ConfirmarSalida Confirmar = new ConfirmarSalida();
     CustomScrollBarUI Barra = new CustomScrollBarUI(); // Barra de Desplazamiento Personalizada
     Color verde = new Color(0, 37, 26); // Color principal de la Seccion de Aprender
     Color azul = new Color(0, 47, 108); // Color principal de la Seccion de Historia
@@ -125,13 +125,11 @@ public class Home_Apolo extends javax.swing.JFrame {
             addWindowListener(new WindowAdapter() {
                 @Override
                 public void windowClosing(WindowEvent e) {
-                    int valor = JOptionPane.showConfirmDialog(null, "¿Está seguro de que desea cerrar la aplicación?", "Advertencia", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
-                    if (valor == JOptionPane.YES_OPTION) {
-                        System.exit(0);
-                    }
+                    Confirmar.setVisible(true);
                 }
             });
         } catch (Exception e) {
+            System.out.println("Error al salir " + e);
         }
     }
 
@@ -232,13 +230,13 @@ public class Home_Apolo extends javax.swing.JFrame {
 
     // Obtener Paneles de los ejercicios en la seccion de CodeStorm
     private Component[] obtenerPanelesEjercicios(int num) {
-
+        
         Component[] componentes = Pnl_Ejercicios.getComponents();
-
+        
         if (num == 2) {
             return componentes;
         }
-
+        
         List<JPanel> paneles = new ArrayList<>();
         for (Component cmp : componentes) {
             if (cmp instanceof JPanel) {
@@ -246,7 +244,7 @@ public class Home_Apolo extends javax.swing.JFrame {
                 paneles.add(pnl);
             }
         }
-
+        
         for (int i = 0; i < paneles.size(); i++) {
             if (paneles.get(i).isVisible()) {
                 return paneles.get(i).getComponents();
@@ -262,7 +260,7 @@ public class Home_Apolo extends javax.swing.JFrame {
         Pnl_ListadoEjercicios.setVisible(false);
         inicializarBotonesCodeStorm();
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -658,6 +656,86 @@ public class Home_Apolo extends javax.swing.JFrame {
         Pnl_Solucion12 = new javax.swing.JPanel();
         Scp_Solucion12 = new javax.swing.JScrollPane();
         Txa_Solucion12 = new javax.swing.JTextArea();
+        Pnl_Ejercicio13 = new javax.swing.JPanel();
+        Pnl_Ej13 = new javax.swing.JPanel();
+        Scp_Ej13 = new javax.swing.JScrollPane();
+        Lbl_Ejercicio13 = new javax.swing.JLabel();
+        Pnl_Codigo13 = new javax.swing.JPanel();
+        Scp_Codigo13 = new javax.swing.JScrollPane();
+        Txa_Codigo13 = new javax.swing.JTextArea();
+        Pnl_Solucion13 = new javax.swing.JPanel();
+        Scp_Solucion13 = new javax.swing.JScrollPane();
+        Txa_Solucion13 = new javax.swing.JTextArea();
+        Pnl_Ejercicio14 = new javax.swing.JPanel();
+        Pnl_Ej14 = new javax.swing.JPanel();
+        Scp_Ej14 = new javax.swing.JScrollPane();
+        Lbl_Ejercicio14 = new javax.swing.JLabel();
+        Pnl_Codigo14 = new javax.swing.JPanel();
+        Scp_Codigo14 = new javax.swing.JScrollPane();
+        Txa_Codigo14 = new javax.swing.JTextArea();
+        Pnl_Solucion14 = new javax.swing.JPanel();
+        Scp_Solucion14 = new javax.swing.JScrollPane();
+        Txa_Solucion14 = new javax.swing.JTextArea();
+        Pnl_Ejercicio15 = new javax.swing.JPanel();
+        Pnl_Ej15 = new javax.swing.JPanel();
+        Scp_Ej15 = new javax.swing.JScrollPane();
+        Lbl_Ejercicio15 = new javax.swing.JLabel();
+        Pnl_Codigo15 = new javax.swing.JPanel();
+        Scp_Codigo15 = new javax.swing.JScrollPane();
+        Txa_Codigo15 = new javax.swing.JTextArea();
+        Pnl_Solucion15 = new javax.swing.JPanel();
+        Scp_Solucion15 = new javax.swing.JScrollPane();
+        Txa_Solucion15 = new javax.swing.JTextArea();
+        Pnl_Ejercicio16 = new javax.swing.JPanel();
+        Pnl_Ej16 = new javax.swing.JPanel();
+        Scp_Ej16 = new javax.swing.JScrollPane();
+        Lbl_Ejercicio16 = new javax.swing.JLabel();
+        Pnl_Codigo16 = new javax.swing.JPanel();
+        Scp_Codigo16 = new javax.swing.JScrollPane();
+        Txa_Codigo16 = new javax.swing.JTextArea();
+        Pnl_Solucion16 = new javax.swing.JPanel();
+        Scp_Solucion16 = new javax.swing.JScrollPane();
+        Txa_Solucion16 = new javax.swing.JTextArea();
+        Pnl_Ejercicio17 = new javax.swing.JPanel();
+        Pnl_Ej17 = new javax.swing.JPanel();
+        Scp_Ej17 = new javax.swing.JScrollPane();
+        Lbl_Ejercicio17 = new javax.swing.JLabel();
+        Pnl_Codigo17 = new javax.swing.JPanel();
+        Scp_Codigo17 = new javax.swing.JScrollPane();
+        Txa_Codigo17 = new javax.swing.JTextArea();
+        Pnl_Solucion17 = new javax.swing.JPanel();
+        Scp_Solucion17 = new javax.swing.JScrollPane();
+        Txa_Solucion17 = new javax.swing.JTextArea();
+        Pnl_Ejercicio18 = new javax.swing.JPanel();
+        Pnl_Ej18 = new javax.swing.JPanel();
+        Scp_Ej18 = new javax.swing.JScrollPane();
+        Lbl_Ejercicio18 = new javax.swing.JLabel();
+        Pnl_Codigo18 = new javax.swing.JPanel();
+        Scp_Codigo18 = new javax.swing.JScrollPane();
+        Txa_Codigo18 = new javax.swing.JTextArea();
+        Pnl_Solucion18 = new javax.swing.JPanel();
+        Scp_Solucion18 = new javax.swing.JScrollPane();
+        Txa_Solucion18 = new javax.swing.JTextArea();
+        Pnl_Ejercicio19 = new javax.swing.JPanel();
+        Pnl_Ej19 = new javax.swing.JPanel();
+        Scp_Ej19 = new javax.swing.JScrollPane();
+        Lbl_Ejercicio19 = new javax.swing.JLabel();
+        Pnl_Codigo19 = new javax.swing.JPanel();
+        Scp_Codigo19 = new javax.swing.JScrollPane();
+        Txa_Codigo19 = new javax.swing.JTextArea();
+        Pnl_Solucion19 = new javax.swing.JPanel();
+        Scp_Solucion19 = new javax.swing.JScrollPane();
+        Txa_Solucion19 = new javax.swing.JTextArea();
+        Pnl_Ejercicio20 = new javax.swing.JPanel();
+        Pnl_Ej20 = new javax.swing.JPanel();
+        Scp_Ej20 = new javax.swing.JScrollPane();
+        Lbl_Ejercicio20 = new javax.swing.JLabel();
+        Pnl_Codigo20 = new javax.swing.JPanel();
+        Scp_Codigo20 = new javax.swing.JScrollPane();
+        Txa_Codigo20 = new javax.swing.JTextArea();
+        Pnl_Solucion20 = new javax.swing.JPanel();
+        Scp_Solucion20 = new javax.swing.JScrollPane();
+        Txa_Solucion20 = new javax.swing.JTextArea();
         Pnl_Historia = new javax.swing.JPanel();
         Pnl_Pagina1 = new javax.swing.JPanel();
         Lbl_Header_Aprender11 = new javax.swing.JLabel();
@@ -1800,7 +1878,7 @@ public class Home_Apolo extends javax.swing.JFrame {
 
         Lbl_Cuestionario7.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         Lbl_Cuestionario7.setText("Operadores Lógicos | Cuestionario");
-        Pnl_Cuestionario7.add(Lbl_Cuestionario7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 610, 30));
+        Pnl_Cuestionario7.add(Lbl_Cuestionario7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 610, 40));
 
         Scp_Cuestionario7.setViewportView(Pnl_Cuestionario7);
 
@@ -2148,7 +2226,7 @@ public class Home_Apolo extends javax.swing.JFrame {
 
         Lbl_Cuestionario10.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         Lbl_Cuestionario10.setText("Funciones y Procedimientos | Cuestionario");
-        Pnl_Cuestionario10.add(Lbl_Cuestionario10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 610, 30));
+        Pnl_Cuestionario10.add(Lbl_Cuestionario10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 650, 30));
 
         Scp_Cuestionario10.setViewportView(Pnl_Cuestionario10);
 
@@ -2496,7 +2574,7 @@ public class Home_Apolo extends javax.swing.JFrame {
 
         Lbl_Cuestionario13.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         Lbl_Cuestionario13.setText("Estructuras de Datos Avanzadas | Cuestionario");
-        Pnl_Cuestionario13.add(Lbl_Cuestionario13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 610, 30));
+        Pnl_Cuestionario13.add(Lbl_Cuestionario13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 660, 30));
 
         Scp_Cuestionario13.setViewportView(Pnl_Cuestionario13);
 
@@ -4069,6 +4147,550 @@ public class Home_Apolo extends javax.swing.JFrame {
 
         Pnl_Ejercicios.add(Pnl_Ejercicio12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1176, 545));
 
+        Pnl_Ejercicio13.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ejercicio13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Pnl_Ej13.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ej13.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 4 | Ejercicio 1 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Ej13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Ej13.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Ej13.setBorder(null);
+
+        Lbl_Ejercicio13.setBackground(new java.awt.Color(237, 234, 243));
+        Lbl_Ejercicio13.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        Lbl_Ejercicio13.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Lbl_Ejercicio13.setText("Label de Ejercicio 13");
+        Lbl_Ejercicio13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Lbl_Ejercicio13.setOpaque(true);
+        Scp_Ej13.setViewportView(Lbl_Ejercicio13);
+
+        Pnl_Ej13.add(Scp_Ej13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio13.add(Pnl_Ej13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Codigo13.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Codigo13.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 4 | Ejercicio 1 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Codigo13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Codigo13.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Codigo13.setBorder(null);
+
+        Txa_Codigo13.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Codigo13.setColumns(20);
+        Txa_Codigo13.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Codigo13.setLineWrap(true);
+        Txa_Codigo13.setRows(5);
+        Txa_Codigo13.setTabSize(4);
+        Txa_Codigo13.setWrapStyleWord(true);
+        Txa_Codigo13.setBorder(null);
+        Scp_Codigo13.setViewportView(Txa_Codigo13);
+
+        Pnl_Codigo13.add(Scp_Codigo13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio13.add(Pnl_Codigo13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Solucion13.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Solucion13.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 4 | Ejercicio 1 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Solucion13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Solucion13.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Solucion13.setBorder(null);
+
+        Txa_Solucion13.setEditable(false);
+        Txa_Solucion13.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Solucion13.setColumns(20);
+        Txa_Solucion13.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Solucion13.setLineWrap(true);
+        Txa_Solucion13.setRows(5);
+        Txa_Solucion13.setTabSize(4);
+        Txa_Solucion13.setText("Aquí va el código con la solución del Ejercicio 13");
+        Txa_Solucion13.setWrapStyleWord(true);
+        Txa_Solucion13.setBorder(null);
+        Scp_Solucion13.setViewportView(Txa_Solucion13);
+
+        Pnl_Solucion13.add(Scp_Solucion13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio13.add(Pnl_Solucion13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Ejercicios.add(Pnl_Ejercicio13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1176, 545));
+
+        Pnl_Ejercicio14.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ejercicio14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Pnl_Ej14.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ej14.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 4 | Ejercicio 2 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Ej14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Ej14.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Ej14.setBorder(null);
+
+        Lbl_Ejercicio14.setBackground(new java.awt.Color(237, 234, 243));
+        Lbl_Ejercicio14.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        Lbl_Ejercicio14.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Lbl_Ejercicio14.setText("Label de Ejercicio 14");
+        Lbl_Ejercicio14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Lbl_Ejercicio14.setOpaque(true);
+        Scp_Ej14.setViewportView(Lbl_Ejercicio14);
+
+        Pnl_Ej14.add(Scp_Ej14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio14.add(Pnl_Ej14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Codigo14.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Codigo14.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 4 | Ejercicio 2 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Codigo14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Codigo14.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Codigo14.setBorder(null);
+
+        Txa_Codigo14.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Codigo14.setColumns(20);
+        Txa_Codigo14.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Codigo14.setLineWrap(true);
+        Txa_Codigo14.setRows(5);
+        Txa_Codigo14.setTabSize(4);
+        Txa_Codigo14.setWrapStyleWord(true);
+        Txa_Codigo14.setBorder(null);
+        Scp_Codigo14.setViewportView(Txa_Codigo14);
+
+        Pnl_Codigo14.add(Scp_Codigo14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio14.add(Pnl_Codigo14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Solucion14.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Solucion14.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 4 | Ejercicio 2  ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Solucion14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Solucion14.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Solucion14.setBorder(null);
+
+        Txa_Solucion14.setEditable(false);
+        Txa_Solucion14.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Solucion14.setColumns(20);
+        Txa_Solucion14.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Solucion14.setLineWrap(true);
+        Txa_Solucion14.setRows(5);
+        Txa_Solucion14.setTabSize(4);
+        Txa_Solucion14.setText("Aquí va el código con la solución del Ejercicio 14");
+        Txa_Solucion14.setWrapStyleWord(true);
+        Txa_Solucion14.setBorder(null);
+        Scp_Solucion14.setViewportView(Txa_Solucion14);
+
+        Pnl_Solucion14.add(Scp_Solucion14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio14.add(Pnl_Solucion14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Ejercicios.add(Pnl_Ejercicio14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1176, 545));
+
+        Pnl_Ejercicio15.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ejercicio15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Pnl_Ej15.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ej15.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 4 | Ejercicio 3 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Ej15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Ej15.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Ej15.setBorder(null);
+
+        Lbl_Ejercicio15.setBackground(new java.awt.Color(237, 234, 243));
+        Lbl_Ejercicio15.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        Lbl_Ejercicio15.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Lbl_Ejercicio15.setText("Label de Ejercicio 15");
+        Lbl_Ejercicio15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Lbl_Ejercicio15.setOpaque(true);
+        Scp_Ej15.setViewportView(Lbl_Ejercicio15);
+
+        Pnl_Ej15.add(Scp_Ej15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio15.add(Pnl_Ej15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Codigo15.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Codigo15.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 4 | Ejercicio 3 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Codigo15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Codigo15.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Codigo15.setBorder(null);
+
+        Txa_Codigo15.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Codigo15.setColumns(20);
+        Txa_Codigo15.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Codigo15.setLineWrap(true);
+        Txa_Codigo15.setRows(5);
+        Txa_Codigo15.setTabSize(4);
+        Txa_Codigo15.setWrapStyleWord(true);
+        Txa_Codigo15.setBorder(null);
+        Scp_Codigo15.setViewportView(Txa_Codigo15);
+
+        Pnl_Codigo15.add(Scp_Codigo15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio15.add(Pnl_Codigo15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Solucion15.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Solucion15.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 4 | Ejercicio 3 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Solucion15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Solucion15.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Solucion15.setBorder(null);
+
+        Txa_Solucion15.setEditable(false);
+        Txa_Solucion15.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Solucion15.setColumns(20);
+        Txa_Solucion15.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Solucion15.setLineWrap(true);
+        Txa_Solucion15.setRows(5);
+        Txa_Solucion15.setTabSize(4);
+        Txa_Solucion15.setText("Aquí va el código con la solución del Ejercicio 15");
+        Txa_Solucion15.setWrapStyleWord(true);
+        Txa_Solucion15.setBorder(null);
+        Scp_Solucion15.setViewportView(Txa_Solucion15);
+
+        Pnl_Solucion15.add(Scp_Solucion15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio15.add(Pnl_Solucion15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Ejercicios.add(Pnl_Ejercicio15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1176, 545));
+
+        Pnl_Ejercicio16.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ejercicio16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Pnl_Ej16.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ej16.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 4 | Ejercicio 4 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Ej16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Ej16.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Ej16.setBorder(null);
+
+        Lbl_Ejercicio16.setBackground(new java.awt.Color(237, 234, 243));
+        Lbl_Ejercicio16.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        Lbl_Ejercicio16.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Lbl_Ejercicio16.setText("Label de Ejercicio 16");
+        Lbl_Ejercicio16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Lbl_Ejercicio16.setOpaque(true);
+        Scp_Ej16.setViewportView(Lbl_Ejercicio16);
+
+        Pnl_Ej16.add(Scp_Ej16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio16.add(Pnl_Ej16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Codigo16.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Codigo16.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 4 | Ejercicio 4 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Codigo16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Codigo16.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Codigo16.setBorder(null);
+
+        Txa_Codigo16.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Codigo16.setColumns(20);
+        Txa_Codigo16.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Codigo16.setLineWrap(true);
+        Txa_Codigo16.setRows(5);
+        Txa_Codigo16.setTabSize(4);
+        Txa_Codigo16.setWrapStyleWord(true);
+        Txa_Codigo16.setBorder(null);
+        Scp_Codigo16.setViewportView(Txa_Codigo16);
+
+        Pnl_Codigo16.add(Scp_Codigo16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio16.add(Pnl_Codigo16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Solucion16.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Solucion16.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 4 | Ejercicio 4 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Solucion16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Solucion16.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Solucion16.setBorder(null);
+
+        Txa_Solucion16.setEditable(false);
+        Txa_Solucion16.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Solucion16.setColumns(20);
+        Txa_Solucion16.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Solucion16.setLineWrap(true);
+        Txa_Solucion16.setRows(5);
+        Txa_Solucion16.setTabSize(4);
+        Txa_Solucion16.setText("Aquí va el código con la solución del Ejercicio 16");
+        Txa_Solucion16.setWrapStyleWord(true);
+        Txa_Solucion16.setBorder(null);
+        Scp_Solucion16.setViewportView(Txa_Solucion16);
+
+        Pnl_Solucion16.add(Scp_Solucion16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio16.add(Pnl_Solucion16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Ejercicios.add(Pnl_Ejercicio16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1176, 545));
+
+        Pnl_Ejercicio17.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ejercicio17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Pnl_Ej17.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ej17.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 5 | Ejercicio 1 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Ej17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Ej17.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Ej17.setBorder(null);
+
+        Lbl_Ejercicio17.setBackground(new java.awt.Color(237, 234, 243));
+        Lbl_Ejercicio17.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        Lbl_Ejercicio17.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Lbl_Ejercicio17.setText("Label de Ejercicio 17");
+        Lbl_Ejercicio17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Lbl_Ejercicio17.setOpaque(true);
+        Scp_Ej17.setViewportView(Lbl_Ejercicio17);
+
+        Pnl_Ej17.add(Scp_Ej17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio17.add(Pnl_Ej17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Codigo17.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Codigo17.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 5 | Ejercicio 1 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Codigo17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Codigo17.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Codigo17.setBorder(null);
+
+        Txa_Codigo17.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Codigo17.setColumns(20);
+        Txa_Codigo17.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Codigo17.setLineWrap(true);
+        Txa_Codigo17.setRows(5);
+        Txa_Codigo17.setTabSize(4);
+        Txa_Codigo17.setWrapStyleWord(true);
+        Txa_Codigo17.setBorder(null);
+        Scp_Codigo17.setViewportView(Txa_Codigo17);
+
+        Pnl_Codigo17.add(Scp_Codigo17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio17.add(Pnl_Codigo17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Solucion17.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Solucion17.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 5 | Ejercicio 1 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Solucion17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Solucion17.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Solucion17.setBorder(null);
+
+        Txa_Solucion17.setEditable(false);
+        Txa_Solucion17.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Solucion17.setColumns(20);
+        Txa_Solucion17.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Solucion17.setLineWrap(true);
+        Txa_Solucion17.setRows(5);
+        Txa_Solucion17.setTabSize(4);
+        Txa_Solucion17.setText("Aquí va el código con la solución del Ejercicio 17");
+        Txa_Solucion17.setWrapStyleWord(true);
+        Txa_Solucion17.setBorder(null);
+        Scp_Solucion17.setViewportView(Txa_Solucion17);
+
+        Pnl_Solucion17.add(Scp_Solucion17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio17.add(Pnl_Solucion17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Ejercicios.add(Pnl_Ejercicio17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1176, 545));
+
+        Pnl_Ejercicio18.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ejercicio18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Pnl_Ej18.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ej18.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 5 | Ejercicio 2 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Ej18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Ej18.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Ej18.setBorder(null);
+
+        Lbl_Ejercicio18.setBackground(new java.awt.Color(237, 234, 243));
+        Lbl_Ejercicio18.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        Lbl_Ejercicio18.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Lbl_Ejercicio18.setText("Label de Ejercicio 18");
+        Lbl_Ejercicio18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Lbl_Ejercicio18.setOpaque(true);
+        Scp_Ej18.setViewportView(Lbl_Ejercicio18);
+
+        Pnl_Ej18.add(Scp_Ej18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio18.add(Pnl_Ej18, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Codigo18.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Codigo18.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 5 | Ejercicio 2 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Codigo18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Codigo18.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Codigo18.setBorder(null);
+
+        Txa_Codigo18.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Codigo18.setColumns(20);
+        Txa_Codigo18.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Codigo18.setLineWrap(true);
+        Txa_Codigo18.setRows(5);
+        Txa_Codigo18.setTabSize(4);
+        Txa_Codigo18.setWrapStyleWord(true);
+        Txa_Codigo18.setBorder(null);
+        Scp_Codigo18.setViewportView(Txa_Codigo18);
+
+        Pnl_Codigo18.add(Scp_Codigo18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio18.add(Pnl_Codigo18, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Solucion18.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Solucion18.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 5 | Ejercicio 2  ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Solucion18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Solucion18.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Solucion18.setBorder(null);
+
+        Txa_Solucion18.setEditable(false);
+        Txa_Solucion18.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Solucion18.setColumns(20);
+        Txa_Solucion18.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Solucion18.setLineWrap(true);
+        Txa_Solucion18.setRows(5);
+        Txa_Solucion18.setTabSize(4);
+        Txa_Solucion18.setText("Aquí va el código con la solución del Ejercicio 18");
+        Txa_Solucion18.setWrapStyleWord(true);
+        Txa_Solucion18.setBorder(null);
+        Scp_Solucion18.setViewportView(Txa_Solucion18);
+
+        Pnl_Solucion18.add(Scp_Solucion18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio18.add(Pnl_Solucion18, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Ejercicios.add(Pnl_Ejercicio18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1176, 545));
+
+        Pnl_Ejercicio19.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ejercicio19.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Pnl_Ej19.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ej19.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 5 | Ejercicio 3 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Ej19.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Ej19.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Ej19.setBorder(null);
+
+        Lbl_Ejercicio19.setBackground(new java.awt.Color(237, 234, 243));
+        Lbl_Ejercicio19.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        Lbl_Ejercicio19.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Lbl_Ejercicio19.setText("Label de Ejercicio 19");
+        Lbl_Ejercicio19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Lbl_Ejercicio19.setOpaque(true);
+        Scp_Ej19.setViewportView(Lbl_Ejercicio19);
+
+        Pnl_Ej19.add(Scp_Ej19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio19.add(Pnl_Ej19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Codigo19.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Codigo19.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 5 | Ejercicio 3 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Codigo19.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Codigo19.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Codigo19.setBorder(null);
+
+        Txa_Codigo19.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Codigo19.setColumns(20);
+        Txa_Codigo19.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Codigo19.setLineWrap(true);
+        Txa_Codigo19.setRows(5);
+        Txa_Codigo19.setTabSize(4);
+        Txa_Codigo19.setWrapStyleWord(true);
+        Txa_Codigo19.setBorder(null);
+        Scp_Codigo19.setViewportView(Txa_Codigo19);
+
+        Pnl_Codigo19.add(Scp_Codigo19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio19.add(Pnl_Codigo19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Solucion19.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Solucion19.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 5 | Ejercicio 3 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Solucion19.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Solucion19.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Solucion19.setBorder(null);
+
+        Txa_Solucion19.setEditable(false);
+        Txa_Solucion19.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Solucion19.setColumns(20);
+        Txa_Solucion19.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Solucion19.setLineWrap(true);
+        Txa_Solucion19.setRows(5);
+        Txa_Solucion19.setTabSize(4);
+        Txa_Solucion19.setText("Aquí va el código con la solución del Ejercicio 19");
+        Txa_Solucion19.setWrapStyleWord(true);
+        Txa_Solucion19.setBorder(null);
+        Scp_Solucion19.setViewportView(Txa_Solucion19);
+
+        Pnl_Solucion19.add(Scp_Solucion19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio19.add(Pnl_Solucion19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Ejercicios.add(Pnl_Ejercicio19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1176, 545));
+
+        Pnl_Ejercicio20.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ejercicio20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Pnl_Ej20.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Ej20.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 5 | Ejercicio 4 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Ej20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Ej20.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Ej20.setBorder(null);
+
+        Lbl_Ejercicio20.setBackground(new java.awt.Color(237, 234, 243));
+        Lbl_Ejercicio20.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        Lbl_Ejercicio20.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Lbl_Ejercicio20.setText("Label de Ejercicio 20");
+        Lbl_Ejercicio20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Lbl_Ejercicio20.setOpaque(true);
+        Scp_Ej20.setViewportView(Lbl_Ejercicio20);
+
+        Pnl_Ej20.add(Scp_Ej20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio20.add(Pnl_Ej20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Codigo20.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Codigo20.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 5 | Ejercicio 4 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Codigo20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Codigo20.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Codigo20.setBorder(null);
+
+        Txa_Codigo20.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Codigo20.setColumns(20);
+        Txa_Codigo20.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Codigo20.setLineWrap(true);
+        Txa_Codigo20.setRows(5);
+        Txa_Codigo20.setTabSize(4);
+        Txa_Codigo20.setWrapStyleWord(true);
+        Txa_Codigo20.setBorder(null);
+        Scp_Codigo20.setViewportView(Txa_Codigo20);
+
+        Pnl_Codigo20.add(Scp_Codigo20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio20.add(Pnl_Codigo20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Solucion20.setBackground(new java.awt.Color(237, 234, 243));
+        Pnl_Solucion20.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 2, true), " Nivel 5 | Ejercicio 4 ", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 30), new java.awt.Color(204, 0, 0))); // NOI18N
+        Pnl_Solucion20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Scp_Solucion20.setBackground(new java.awt.Color(237, 234, 243));
+        Scp_Solucion20.setBorder(null);
+
+        Txa_Solucion20.setEditable(false);
+        Txa_Solucion20.setBackground(new java.awt.Color(237, 234, 243));
+        Txa_Solucion20.setColumns(20);
+        Txa_Solucion20.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
+        Txa_Solucion20.setLineWrap(true);
+        Txa_Solucion20.setRows(5);
+        Txa_Solucion20.setTabSize(4);
+        Txa_Solucion20.setText("Aquí va el código con la solución del Ejercicio 20");
+        Txa_Solucion20.setWrapStyleWord(true);
+        Txa_Solucion20.setBorder(null);
+        Scp_Solucion20.setViewportView(Txa_Solucion20);
+
+        Pnl_Solucion20.add(Scp_Solucion20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 1080, 440));
+
+        Pnl_Ejercicio20.add(Pnl_Solucion20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 1110, 510));
+
+        Pnl_Ejercicios.add(Pnl_Ejercicio20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1176, 545));
+
         Pnl_General.add(Pnl_Ejercicios, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 1176, 545));
 
         Pnl_CodeStorm.add(Pnl_General, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1176, 705));
@@ -4194,7 +4816,7 @@ public class Home_Apolo extends javax.swing.JFrame {
         if (Btn_Aprender.isSelected()) {
             apagarSecciones(1);
             habilitarBotonesAprender();
-
+            
             Pnl_Aprender.setVisible(true);
             Pnl_Mapa.setVisible(true);
 
@@ -4213,7 +4835,7 @@ public class Home_Apolo extends javax.swing.JFrame {
     private void Btn_ProgramarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_ProgramarActionPerformed
         if (Btn_Programar.isSelected()) {
             apagarSecciones(2);
-
+            
             Toolkit t = Toolkit.getDefaultToolkit();
             Dimension screenSize = t.getScreenSize();
             // Mostrar la Resolucion de Pantalla del Equipo
@@ -4240,7 +4862,7 @@ public class Home_Apolo extends javax.swing.JFrame {
             Pnl_Home.setVisible(true);
         }
     }//GEN-LAST:event_Btn_HistoriaActionPerformed
-
+    
 
     private void Btn_Aprender_Tema1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Aprender_Tema1ActionPerformed
         Scp_Tema1.setVisible(true);
@@ -4463,46 +5085,54 @@ public class Home_Apolo extends javax.swing.JFrame {
     }//GEN-LAST:event_Btn_Nivel3_Ejercicio4ActionPerformed
 
     private void Btn_Nivel4_Ejercicio1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel4_Ejercicio1ActionPerformed
-
+        Pnl_Ejercicio13.setVisible(true);
+        paneles_ON_OFF();
     }//GEN-LAST:event_Btn_Nivel4_Ejercicio1ActionPerformed
 
     private void Btn_Nivel4_Ejercicio2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel4_Ejercicio2ActionPerformed
-        // TODO add your handling code here:
+        Pnl_Ejercicio14.setVisible(true);
+        paneles_ON_OFF();
     }//GEN-LAST:event_Btn_Nivel4_Ejercicio2ActionPerformed
 
     private void Btn_Nivel4_Ejercicio3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel4_Ejercicio3ActionPerformed
-        // TODO add your handling code here:
+        Pnl_Ejercicio15.setVisible(true);
+        paneles_ON_OFF();
     }//GEN-LAST:event_Btn_Nivel4_Ejercicio3ActionPerformed
 
     private void Btn_Nivel4_Ejercicio4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel4_Ejercicio4ActionPerformed
-        // TODO add your handling code here:
+        Pnl_Ejercicio16.setVisible(true);
+        paneles_ON_OFF();
     }//GEN-LAST:event_Btn_Nivel4_Ejercicio4ActionPerformed
 
     private void Btn_Nivel5_Ejercicio1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel5_Ejercicio1ActionPerformed
-        // TODO add your handling code here:
+        Pnl_Ejercicio17.setVisible(true);
+        paneles_ON_OFF();
     }//GEN-LAST:event_Btn_Nivel5_Ejercicio1ActionPerformed
 
     private void Btn_Nivel5_Ejercicio2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel5_Ejercicio2ActionPerformed
-        // TODO add your handling code here:
+        Pnl_Ejercicio18.setVisible(true);
+        paneles_ON_OFF();
     }//GEN-LAST:event_Btn_Nivel5_Ejercicio2ActionPerformed
 
     private void Btn_Nivel5_Ejercicio3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel5_Ejercicio3ActionPerformed
-        // TODO add your handling code here:
+        Pnl_Ejercicio19.setVisible(true);
+        paneles_ON_OFF();
     }//GEN-LAST:event_Btn_Nivel5_Ejercicio3ActionPerformed
 
     private void Btn_Nivel5_Ejercicio4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Nivel5_Ejercicio4ActionPerformed
-        // TODO add your handling code here:
+        Pnl_Ejercicio20.setVisible(true);
+        paneles_ON_OFF();
     }//GEN-LAST:event_Btn_Nivel5_Ejercicio4ActionPerformed
 
     private void Btn_EjercicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_EjercicioActionPerformed
 
         // Obtener paneles hijos del Panel visible
         Component[] paneles = obtenerPanelesEjercicios(1);
-
+        
         paneles[0].setVisible(true);
         paneles[1].setVisible(false);
         paneles[2].setVisible(false);
-
+        
         DeshabilitarBotonesCodeStorm(0);
     }//GEN-LAST:event_Btn_EjercicioActionPerformed
 
@@ -4514,11 +5144,11 @@ public class Home_Apolo extends javax.swing.JFrame {
 
         // Obtener paneles hijos del Panel visible
         Component[] paneles = obtenerPanelesEjercicios(1);
-
+        
         paneles[0].setVisible(false);
         paneles[1].setVisible(true);
         paneles[2].setVisible(false);
-
+        
         DeshabilitarBotonesCodeStorm(1);
     }//GEN-LAST:event_Btn_CodigoActionPerformed
 
@@ -4526,11 +5156,11 @@ public class Home_Apolo extends javax.swing.JFrame {
 
         // Obtener paneles hijos del Panel visible
         Component[] paneles = obtenerPanelesEjercicios(1);
-
+        
         paneles[0].setVisible(false);
         paneles[1].setVisible(false);
         paneles[2].setVisible(true);
-
+        
         DeshabilitarBotonesCodeStorm(2);
     }//GEN-LAST:event_Btn_SolucionActionPerformed
 
@@ -4549,7 +5179,7 @@ public class Home_Apolo extends javax.swing.JFrame {
                 paneles[i].setVisible(false);
             }
         }
-
+        
         inicializarBotonesCodeStorm();
     }//GEN-LAST:event_Btn_AnteriorActionPerformed
 
@@ -4566,7 +5196,7 @@ public class Home_Apolo extends javax.swing.JFrame {
                 break;
             }
         }
-
+        
         inicializarBotonesCodeStorm();
     }//GEN-LAST:event_Btn_SiguienteActionPerformed
 
@@ -4765,7 +5395,7 @@ public class Home_Apolo extends javax.swing.JFrame {
 //        Scp_EjercicioFinal.setVisible(true);
         Scp_Cuestionario14.setVisible(false);
     }//GEN-LAST:event_Btn_Siguiente_EjercicioFinalActionPerformed
-
+    
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -4936,7 +5566,15 @@ public class Home_Apolo extends javax.swing.JFrame {
     private javax.swing.JLabel Lbl_Ejercicio10;
     private javax.swing.JLabel Lbl_Ejercicio11;
     private javax.swing.JLabel Lbl_Ejercicio12;
+    private javax.swing.JLabel Lbl_Ejercicio13;
+    private javax.swing.JLabel Lbl_Ejercicio14;
+    private javax.swing.JLabel Lbl_Ejercicio15;
+    private javax.swing.JLabel Lbl_Ejercicio16;
+    private javax.swing.JLabel Lbl_Ejercicio17;
+    private javax.swing.JLabel Lbl_Ejercicio18;
+    private javax.swing.JLabel Lbl_Ejercicio19;
     private javax.swing.JLabel Lbl_Ejercicio2;
+    private javax.swing.JLabel Lbl_Ejercicio20;
     private javax.swing.JLabel Lbl_Ejercicio3;
     private javax.swing.JLabel Lbl_Ejercicio4;
     private javax.swing.JLabel Lbl_Ejercicio5;
@@ -5010,7 +5648,15 @@ public class Home_Apolo extends javax.swing.JFrame {
     private javax.swing.JPanel Pnl_Codigo10;
     private javax.swing.JPanel Pnl_Codigo11;
     private javax.swing.JPanel Pnl_Codigo12;
+    private javax.swing.JPanel Pnl_Codigo13;
+    private javax.swing.JPanel Pnl_Codigo14;
+    private javax.swing.JPanel Pnl_Codigo15;
+    private javax.swing.JPanel Pnl_Codigo16;
+    private javax.swing.JPanel Pnl_Codigo17;
+    private javax.swing.JPanel Pnl_Codigo18;
+    private javax.swing.JPanel Pnl_Codigo19;
     private javax.swing.JPanel Pnl_Codigo2;
+    private javax.swing.JPanel Pnl_Codigo20;
     private javax.swing.JPanel Pnl_Codigo3;
     private javax.swing.JPanel Pnl_Codigo4;
     private javax.swing.JPanel Pnl_Codigo5;
@@ -5036,7 +5682,15 @@ public class Home_Apolo extends javax.swing.JFrame {
     private javax.swing.JPanel Pnl_Ej10;
     private javax.swing.JPanel Pnl_Ej11;
     private javax.swing.JPanel Pnl_Ej12;
+    private javax.swing.JPanel Pnl_Ej13;
+    private javax.swing.JPanel Pnl_Ej14;
+    private javax.swing.JPanel Pnl_Ej15;
+    private javax.swing.JPanel Pnl_Ej16;
+    private javax.swing.JPanel Pnl_Ej17;
+    private javax.swing.JPanel Pnl_Ej18;
+    private javax.swing.JPanel Pnl_Ej19;
     private javax.swing.JPanel Pnl_Ej2;
+    private javax.swing.JPanel Pnl_Ej20;
     private javax.swing.JPanel Pnl_Ej3;
     private javax.swing.JPanel Pnl_Ej4;
     private javax.swing.JPanel Pnl_Ej5;
@@ -5048,7 +5702,15 @@ public class Home_Apolo extends javax.swing.JFrame {
     private javax.swing.JPanel Pnl_Ejercicio10;
     private javax.swing.JPanel Pnl_Ejercicio11;
     private javax.swing.JPanel Pnl_Ejercicio12;
+    private javax.swing.JPanel Pnl_Ejercicio13;
+    private javax.swing.JPanel Pnl_Ejercicio14;
+    private javax.swing.JPanel Pnl_Ejercicio15;
+    private javax.swing.JPanel Pnl_Ejercicio16;
+    private javax.swing.JPanel Pnl_Ejercicio17;
+    private javax.swing.JPanel Pnl_Ejercicio18;
+    private javax.swing.JPanel Pnl_Ejercicio19;
     private javax.swing.JPanel Pnl_Ejercicio2;
+    private javax.swing.JPanel Pnl_Ejercicio20;
     private javax.swing.JPanel Pnl_Ejercicio3;
     private javax.swing.JPanel Pnl_Ejercicio4;
     private javax.swing.JPanel Pnl_Ejercicio5;
@@ -5075,7 +5737,15 @@ public class Home_Apolo extends javax.swing.JFrame {
     private javax.swing.JPanel Pnl_Solucion10;
     private javax.swing.JPanel Pnl_Solucion11;
     private javax.swing.JPanel Pnl_Solucion12;
+    private javax.swing.JPanel Pnl_Solucion13;
+    private javax.swing.JPanel Pnl_Solucion14;
+    private javax.swing.JPanel Pnl_Solucion15;
+    private javax.swing.JPanel Pnl_Solucion16;
+    private javax.swing.JPanel Pnl_Solucion17;
+    private javax.swing.JPanel Pnl_Solucion18;
+    private javax.swing.JPanel Pnl_Solucion19;
     private javax.swing.JPanel Pnl_Solucion2;
+    private javax.swing.JPanel Pnl_Solucion20;
     private javax.swing.JPanel Pnl_Solucion3;
     private javax.swing.JPanel Pnl_Solucion4;
     private javax.swing.JPanel Pnl_Solucion5;
@@ -5101,7 +5771,15 @@ public class Home_Apolo extends javax.swing.JFrame {
     private javax.swing.JScrollPane Scp_Codigo10;
     private javax.swing.JScrollPane Scp_Codigo11;
     private javax.swing.JScrollPane Scp_Codigo12;
+    private javax.swing.JScrollPane Scp_Codigo13;
+    private javax.swing.JScrollPane Scp_Codigo14;
+    private javax.swing.JScrollPane Scp_Codigo15;
+    private javax.swing.JScrollPane Scp_Codigo16;
+    private javax.swing.JScrollPane Scp_Codigo17;
+    private javax.swing.JScrollPane Scp_Codigo18;
+    private javax.swing.JScrollPane Scp_Codigo19;
     private javax.swing.JScrollPane Scp_Codigo2;
+    private javax.swing.JScrollPane Scp_Codigo20;
     private javax.swing.JScrollPane Scp_Codigo3;
     private javax.swing.JScrollPane Scp_Codigo4;
     private javax.swing.JScrollPane Scp_Codigo5;
@@ -5128,7 +5806,15 @@ public class Home_Apolo extends javax.swing.JFrame {
     private javax.swing.JScrollPane Scp_Ej10;
     private javax.swing.JScrollPane Scp_Ej11;
     private javax.swing.JScrollPane Scp_Ej12;
+    private javax.swing.JScrollPane Scp_Ej13;
+    private javax.swing.JScrollPane Scp_Ej14;
+    private javax.swing.JScrollPane Scp_Ej15;
+    private javax.swing.JScrollPane Scp_Ej16;
+    private javax.swing.JScrollPane Scp_Ej17;
+    private javax.swing.JScrollPane Scp_Ej18;
+    private javax.swing.JScrollPane Scp_Ej19;
     private javax.swing.JScrollPane Scp_Ej2;
+    private javax.swing.JScrollPane Scp_Ej20;
     private javax.swing.JScrollPane Scp_Ej3;
     private javax.swing.JScrollPane Scp_Ej4;
     private javax.swing.JScrollPane Scp_Ej5;
@@ -5142,7 +5828,15 @@ public class Home_Apolo extends javax.swing.JFrame {
     private javax.swing.JScrollPane Scp_Solucion10;
     private javax.swing.JScrollPane Scp_Solucion11;
     private javax.swing.JScrollPane Scp_Solucion12;
+    private javax.swing.JScrollPane Scp_Solucion13;
+    private javax.swing.JScrollPane Scp_Solucion14;
+    private javax.swing.JScrollPane Scp_Solucion15;
+    private javax.swing.JScrollPane Scp_Solucion16;
+    private javax.swing.JScrollPane Scp_Solucion17;
+    private javax.swing.JScrollPane Scp_Solucion18;
+    private javax.swing.JScrollPane Scp_Solucion19;
     private javax.swing.JScrollPane Scp_Solucion2;
+    private javax.swing.JScrollPane Scp_Solucion20;
     private javax.swing.JScrollPane Scp_Solucion3;
     private javax.swing.JScrollPane Scp_Solucion4;
     private javax.swing.JScrollPane Scp_Solucion5;
@@ -5168,7 +5862,15 @@ public class Home_Apolo extends javax.swing.JFrame {
     private javax.swing.JTextArea Txa_Codigo10;
     private javax.swing.JTextArea Txa_Codigo11;
     private javax.swing.JTextArea Txa_Codigo12;
+    private javax.swing.JTextArea Txa_Codigo13;
+    private javax.swing.JTextArea Txa_Codigo14;
+    private javax.swing.JTextArea Txa_Codigo15;
+    private javax.swing.JTextArea Txa_Codigo16;
+    private javax.swing.JTextArea Txa_Codigo17;
+    private javax.swing.JTextArea Txa_Codigo18;
+    private javax.swing.JTextArea Txa_Codigo19;
     private javax.swing.JTextArea Txa_Codigo2;
+    private javax.swing.JTextArea Txa_Codigo20;
     private javax.swing.JTextArea Txa_Codigo3;
     private javax.swing.JTextArea Txa_Codigo4;
     private javax.swing.JTextArea Txa_Codigo5;
@@ -5182,7 +5884,15 @@ public class Home_Apolo extends javax.swing.JFrame {
     private javax.swing.JTextArea Txa_Solucion10;
     private javax.swing.JTextArea Txa_Solucion11;
     private javax.swing.JTextArea Txa_Solucion12;
+    private javax.swing.JTextArea Txa_Solucion13;
+    private javax.swing.JTextArea Txa_Solucion14;
+    private javax.swing.JTextArea Txa_Solucion15;
+    private javax.swing.JTextArea Txa_Solucion16;
+    private javax.swing.JTextArea Txa_Solucion17;
+    private javax.swing.JTextArea Txa_Solucion18;
+    private javax.swing.JTextArea Txa_Solucion19;
     private javax.swing.JTextArea Txa_Solucion2;
+    private javax.swing.JTextArea Txa_Solucion20;
     private javax.swing.JTextArea Txa_Solucion3;
     private javax.swing.JTextArea Txa_Solucion4;
     private javax.swing.JTextArea Txa_Solucion5;
