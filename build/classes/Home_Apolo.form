@@ -1914,7 +1914,10 @@
                     <Component class="javax.swing.JButton" name="Btn_Anterior_Cuestionario4">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_Off_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -1930,7 +1933,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_On_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -2276,7 +2279,7 @@
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="30" y="100" width="340" height="40"/>
+                          <AbsoluteConstraints x="30" y="100" width="440" height="40"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -2334,7 +2337,7 @@
                     <Component class="javax.swing.JButton" name="Btn_Anterior_OperadoresdeRelacion">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresdeRelacion_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -2353,7 +2356,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresdeRelacion_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -2368,7 +2371,7 @@
                     <Component class="javax.swing.JButton" name="Btn_Siguiente_OperadoresLogicos">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_OperadoresLogicos_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -2387,7 +2390,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_OperadoresLogicos_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -2416,7 +2419,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Operadores Aritm&#xe9;ticos | Cuestionario"/>
+                        <Property name="text" type="java.lang.String" value="Operadores de Relaci&#xf3;n | Cuestionario"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2478,7 +2481,7 @@
                     <Component class="javax.swing.JButton" name="Btn_Anterior_Cuestionario6">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_Off_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario6_Off.png"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -2494,7 +2497,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_On_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario6_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -2509,7 +2512,7 @@
                     <Component class="javax.swing.JButton" name="Btn_Siguiente_Cuestionario7">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario7_Off.png"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -2525,7 +2528,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario7_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -2554,7 +2557,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Lectura e Impresi&#xf3;n"/>
+                        <Property name="text" type="java.lang.String" value="Operadores L&#xf3;gicos"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2616,7 +2619,7 @@
                     <Component class="javax.swing.JButton" name="Btn_Anterior_OperadoresLogicos">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresLogicos_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -2635,7 +2638,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresLogicos_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -2650,7 +2653,7 @@
                     <Component class="javax.swing.JButton" name="Btn_Siguiente_Condicionales">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Condicionales_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -2669,7 +2672,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Condicionales_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -2698,7 +2701,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Operadores Aritm&#xe9;ticos | Cuestionario"/>
+                        <Property name="text" type="java.lang.String" value="Operadores L&#xf3;gicos | Cuestionario"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2760,7 +2763,10 @@
                     <Component class="javax.swing.JButton" name="Btn_Anterior_Cuestionario7">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_Off_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario7_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -2776,7 +2782,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_On_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario7_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -2791,7 +2797,10 @@
                     <Component class="javax.swing.JButton" name="Btn_Siguiente_Cuestionario8">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario8_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -2807,7 +2816,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario8_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -2836,7 +2845,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Lectura e Impresi&#xf3;n"/>
+                        <Property name="text" type="java.lang.String" value="Condicionales"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -2898,7 +2907,7 @@
                     <Component class="javax.swing.JButton" name="Btn_Anterior_Condicionales">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Condicionales_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -2917,7 +2926,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Condicionales_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -2932,7 +2941,7 @@
                     <Component class="javax.swing.JButton" name="Btn_Siguiente_Bucles">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Bucles_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -2951,7 +2960,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Bucles_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -2980,7 +2989,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Operadores Aritm&#xe9;ticos | Cuestionario"/>
+                        <Property name="text" type="java.lang.String" value="Condicionales | Cuestionario"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -3042,7 +3051,10 @@
                     <Component class="javax.swing.JButton" name="Btn_Anterior_Cuestionario8">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_Off_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario8_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -3058,7 +3070,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_On_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario8_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -3073,7 +3085,10 @@
                     <Component class="javax.swing.JButton" name="Btn_Siguiente_Cuestionario9">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario9_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -3089,7 +3104,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario9_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -3118,7 +3133,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Lectura e Impresi&#xf3;n"/>
+                        <Property name="text" type="java.lang.String" value="Bucles"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -3180,7 +3195,7 @@
                     <Component class="javax.swing.JButton" name="Btn_Anterior_Bucles">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Bucles_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -3199,7 +3214,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Bucles_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -3211,10 +3226,10 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JButton" name="Btn_Siguiente_FuncionesyProc">
+                    <Component class="javax.swing.JButton" name="Btn_Siguiente_FuncyProc">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_FuncyProc_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -3233,11 +3248,11 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_FuncyProc_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_FuncionesyProcActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_FuncyProcActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -3262,7 +3277,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Operadores Aritm&#xe9;ticos | Cuestionario"/>
+                        <Property name="text" type="java.lang.String" value="Bucles | Cuestionario"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -3324,7 +3339,10 @@
                     <Component class="javax.swing.JButton" name="Btn_Anterior_Cuestionario9">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_Off_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario9_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -3340,7 +3358,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_On_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario9_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -3355,7 +3373,10 @@
                     <Component class="javax.swing.JButton" name="Btn_Siguiente_Cuestionario10">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario10_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -3371,7 +3392,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario10_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -3400,11 +3421,11 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Lectura e Impresi&#xf3;n"/>
+                        <Property name="text" type="java.lang.String" value="Funciones y Procedimientos"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="30" y="100" width="340" height="40"/>
+                          <AbsoluteConstraints x="30" y="100" width="460" height="40"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -3459,10 +3480,10 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="Btn_Anterior_FuncionesyProc">
+                    <Component class="javax.swing.JButton" name="Btn_Anterior_FuncyProc">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_FuncyProc_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -3481,11 +3502,11 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_FuncyProc_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_FuncionesyProcActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_FuncyProcActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -3496,7 +3517,7 @@
                     <Component class="javax.swing.JButton" name="Btn_Siguiente_Recursion">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Recursion_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -3515,7 +3536,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Recursion_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -3544,7 +3565,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Operadores Aritm&#xe9;ticos | Cuestionario"/>
+                        <Property name="text" type="java.lang.String" value="Funciones y Procedimientos | Cuestionario"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -3606,7 +3627,10 @@
                     <Component class="javax.swing.JButton" name="Btn_Anterior_Cuestionario10">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_Off_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario10_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -3622,7 +3646,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_On_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario10_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -3637,7 +3661,10 @@
                     <Component class="javax.swing.JButton" name="Btn_Siguiente_Cuestionario11">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario11_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -3653,7 +3680,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario11_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -3682,7 +3709,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Lectura e Impresi&#xf3;n"/>
+                        <Property name="text" type="java.lang.String" value="Recursi&#xf3;n"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -3741,10 +3768,10 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="Btn_Anterior_OperadoresAritmeticos7">
+                    <Component class="javax.swing.JButton" name="Btn_Anterior_Recursion">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Recursion_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -3763,11 +3790,11 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Recursion_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_OperadoresAritmeticos7ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_RecursionActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -3775,10 +3802,10 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JButton" name="Btn_Siguiente_LecturaeImpresion7">
+                    <Component class="javax.swing.JButton" name="Btn_Siguiente_EDDBasicas">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_EDDBasicas_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -3797,11 +3824,11 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_EDDBasicas_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_LecturaeImpresion7ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_EDDBasicasActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -3826,7 +3853,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Operadores Aritm&#xe9;ticos | Cuestionario"/>
+                        <Property name="text" type="java.lang.String" value="Recursi&#xf3;n | Cuestionario"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -3888,7 +3915,10 @@
                     <Component class="javax.swing.JButton" name="Btn_Anterior_Cuestionario11">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_Off_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario11_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -3904,7 +3934,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_On_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario11_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -3919,7 +3949,10 @@
                     <Component class="javax.swing.JButton" name="Btn_Siguiente_Cuestionario12">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario12_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -3935,7 +3968,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario12_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -3964,11 +3997,11 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Lectura e Impresi&#xf3;n"/>
+                        <Property name="text" type="java.lang.String" value="Estructuras de Datos B&#xe1;sicas"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="30" y="100" width="340" height="40"/>
+                          <AbsoluteConstraints x="30" y="100" width="450" height="40"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -4023,10 +4056,10 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="Btn_Anterior_OperadoresAritmeticos8">
+                    <Component class="javax.swing.JButton" name="Btn_Anterior_EDDBasicas">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_EDDBasicas_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -4045,11 +4078,11 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_EDDBasicas_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_OperadoresAritmeticos8ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_EDDBasicasActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -4057,10 +4090,10 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JButton" name="Btn_Siguiente_LecturaeImpresion8">
+                    <Component class="javax.swing.JButton" name="Btn_Siguiente_EDDAvanzadas">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_EDDAvanzadas_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -4079,11 +4112,11 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_EDDAvanzadas_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_LecturaeImpresion8ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_EDDAvanzadasActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -4108,11 +4141,11 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Operadores Aritm&#xe9;ticos | Cuestionario"/>
+                        <Property name="text" type="java.lang.String" value="Estructuras de Datos B&#xe1;sicas | Cuestionario"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="30" y="100" width="610" height="30"/>
+                          <AbsoluteConstraints x="30" y="100" width="630" height="30"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -4170,7 +4203,10 @@
                     <Component class="javax.swing.JButton" name="Btn_Anterior_Cuestionario12">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_Off_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario12_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -4186,7 +4222,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_On_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario12_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -4201,7 +4237,10 @@
                     <Component class="javax.swing.JButton" name="Btn_Siguiente_Cuestionario13">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario13_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -4217,7 +4256,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario13_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -4246,11 +4285,11 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Lectura e Impresi&#xf3;n"/>
+                        <Property name="text" type="java.lang.String" value="Estructuras de Datos Avanzadas"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="30" y="100" width="340" height="40"/>
+                          <AbsoluteConstraints x="30" y="100" width="510" height="40"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -4305,10 +4344,10 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="Btn_Anterior_OperadoresAritmeticos9">
+                    <Component class="javax.swing.JButton" name="Btn_Anterior_EDDAvanzadas">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_EDDAvanzadas_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -4327,11 +4366,11 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_EDDAvanzadas_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_OperadoresAritmeticos9ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_EDDAvanzadasActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -4339,10 +4378,10 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JButton" name="Btn_Siguiente_LecturaeImpresion9">
+                    <Component class="javax.swing.JButton" name="Btn_Siguiente_PrimerosAlgoritmos">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_PrimerosAlgoritmos_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -4361,11 +4400,11 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_PrimerosAlgoritmos_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_LecturaeImpresion9ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_PrimerosAlgoritmosActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -4390,7 +4429,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Operadores Aritm&#xe9;ticos | Cuestionario"/>
+                        <Property name="text" type="java.lang.String" value="Estructuras de Datos Avanzadas | Cuestionario"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -4452,7 +4491,10 @@
                     <Component class="javax.swing.JButton" name="Btn_Anterior_Cuestionario13">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_Off_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario13_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -4468,7 +4510,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario4_On_1.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_Cuestionario13_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -4483,7 +4525,10 @@
                     <Component class="javax.swing.JButton" name="Btn_Siguiente_Cuestionario14">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario14_Off.png"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="null"/>
                         </Property>
                         <Property name="borderPainted" type="boolean" value="false"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
@@ -4499,7 +4544,7 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario5_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_Cuestionario14_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -4528,7 +4573,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Lectura e Impresi&#xf3;n"/>
+                        <Property name="text" type="java.lang.String" value="Primeros Algoritmos"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -4587,10 +4632,10 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JButton" name="Btn_Anterior_OperadoresAritmeticos10">
+                    <Component class="javax.swing.JButton" name="Btn_Anterior_PrimerosAlgoritmos">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_PrimerosAlgoritmos_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -4609,11 +4654,11 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Anterior_OperadoresAritmeticos_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Anterior_PrimerosAlgoritmos_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_OperadoresAritmeticos10ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Anterior_PrimerosAlgoritmosActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -4621,10 +4666,10 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JButton" name="Btn_Siguiente_LecturaeImpresion10">
+                    <Component class="javax.swing.JButton" name="Btn_Siguiente_EjercicioFinal">
                       <Properties>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_Off.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_EjercicioFinal_Off.png"/>
                         </Property>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
@@ -4643,11 +4688,11 @@
                           <Dimension value="[254, 64]"/>
                         </Property>
                         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/Resources/Aprender/Siguiente_LecturaeImpresion_On.png"/>
+                          <Image iconType="3" name="/Resources/Aprender/Siguiente_EjercicioFinal_On.png"/>
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_LecturaeImpresion10ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Btn_Siguiente_EjercicioFinalActionPerformed"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -4672,7 +4717,7 @@
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Trebuchet MS" size="18" style="1"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value="Operadores Aritm&#xe9;ticos | Cuestionario"/>
+                        <Property name="text" type="java.lang.String" value="Primeros Algoritmos | Cuestionario"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
