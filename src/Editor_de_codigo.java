@@ -9,25 +9,40 @@ import java.awt.datatransfer.Transferable;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import static judge.CompileAndRun.*;
 
 public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwner {
-    
+
     SimpleWebBrowser s = new SimpleWebBrowser();
     JFileChooser seleccion = new JFileChooser();
     File archivo;
     FileInputStream entrada;
     FileOutputStream salida;
-    
+
     public Editor_de_codigo() {
         initComponents();
         this.setLocationRelativeTo(null);
+        Plantilla();
     }
-    
+
+    private void Plantilla() {
+        Txp_Codigo.setText("public class Main {\n"
+                + "    public static void main(String[] args) {\n"
+                + "       System.out.println(\"Hello World\");\n"
+                + "    } \n"
+                + "}");
+    }
+
     public String openFile(File archivo) {
-        
+
         String documento = "";
         try {
             entrada = new FileInputStream(archivo);
@@ -41,7 +56,7 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
         }
         return documento;
     }
-    
+
     public String saveFile(File archivo, String documento) {
         String mensaje = null;
         try {
@@ -54,12 +69,72 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
         }
         return mensaje;
     }
-    
+
     public void clipBoard(String texto) {
         StringSelection txt = new StringSelection(texto);
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(txt, this);
     }
-    
+
+    private void guardar() {
+        if (seleccion.showDialog(null, "Guardar") == JFileChooser.APPROVE_OPTION) {
+            archivo = seleccion.getSelectedFile();
+            if (archivo.getName().endsWith(".java")) {
+                String documento = Txp_Codigo.getText();
+                String mensaje = saveFile(archivo, documento);
+                if (mensaje != null) {
+                    JOptionPane.showMessageDialog(null, mensaje);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Archivo no compatible.");
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Guardar Codigo Java");
+            }
+        }
+    }
+
+    public int ejecutar(String clase, String ruta) throws IOException, InterruptedException {
+
+        List<String> cmds = new ArrayList<>();
+        cmds.add("java");
+        cmds.add(clase);
+
+        ProcessBuilder pb = new ProcessBuilder(cmds);
+        pb.redirectError();
+        pb.redirectInput(new File(System.getProperty("user.dir") + "\\src\\editor", "output.txt"));
+
+        String[] partesRuta = ruta.split("\\\\");
+
+        String nuevaRuta = "";
+
+        for (int i = 0; i < partesRuta.length - 1; i++) {
+            if (i < partesRuta.length - 2) {
+                nuevaRuta += partesRuta[i] + "\\\\";
+            } else {
+                nuevaRuta += partesRuta[i];
+            }
+        }
+
+        pb.directory(new File(nuevaRuta));
+
+        Process p = pb.start();
+        InputStreamConsumer consumer = new InputStreamConsumer(p.getInputStream());
+        consumer.start();
+        int result = p.waitFor();
+        consumer.join();
+
+        String writteable = consumer.getOutput().toString();
+
+//      System.out.println("Salida del Codigo: \n" + writteable);
+        Txa_Salida.setText(writteable);
+
+        try (FileWriter fw = new FileWriter(System.getProperty("user.dir") + "\\src\\editor\\output.txt")) {
+            fw.write(writteable);
+            System.out.println("Archivo de salida correctamente creado");
+        }
+
+        return result;
+    }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -71,6 +146,7 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
         BtnEjecutar = new javax.swing.JButton();
         BtnAbrir = new javax.swing.JButton();
         BtnLimpiar = new javax.swing.JButton();
+        BtnPlantilla = new javax.swing.JButton();
         Pnl_Codigo = new javax.swing.JPanel();
         Scp_Codigo = new javax.swing.JScrollPane();
         Txp_Codigo = new javax.swing.JTextPane();
@@ -133,6 +209,14 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
         });
         Pnl_Botones.add(BtnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 20, -1, -1));
 
+        BtnPlantilla.setText("Plantilla");
+        BtnPlantilla.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnPlantillaActionPerformed(evt);
+            }
+        });
+        Pnl_Botones.add(BtnPlantilla, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 20, -1, -1));
+
         Pnl_Principal.add(Pnl_Botones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 60));
 
         Pnl_Codigo.setBackground(new java.awt.Color(204, 255, 255));
@@ -181,24 +265,47 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
     }//GEN-LAST:event_BtnCopiarActionPerformed
 
     private void BtnEjecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEjecutarActionPerformed
-        // TODO add your handling code here:
+        guardar();
+        try {
+            // Ruta donde se guarda el archivo
+            String ruta = archivo.toString();
+            System.out.println(ruta);
+            // Compila el archivo
+            int result = compile(ruta);
+
+            if (result != 0) {
+                JOptionPane.showMessageDialog(null, "Compilation Error");
+                System.out.println("Numero: " + result);
+            }
+
+            System.out.println("Compilador de java (javac) retorna un " + result);
+
+            // Ejecutar archivo
+            result = ejecutar("Main", ruta);
+
+            if (result != 0) {
+                System.out.println("Numero: " + result);
+                JOptionPane.showMessageDialog(null, "Runtime Error");
+            } else {
+            }
+            System.out.println("Ejecutable java (java judge.Main) retorna un " + result);
+
+            String documento = Txp_Codigo.getText();
+            String mensaje = saveFile(archivo, documento);
+            if (mensaje != null) {
+                JOptionPane.showMessageDialog(null, mensaje);
+            } else {
+                JOptionPane.showMessageDialog(null, "Archivo no compatible.");
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(Editor_de_codigo.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Editor_de_codigo.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_BtnEjecutarActionPerformed
 
     private void BtnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnguardarActionPerformed
-        if (seleccion.showDialog(null, "Guardar") == JFileChooser.APPROVE_OPTION) {
-            archivo = seleccion.getSelectedFile();
-            if (archivo.getName().endsWith("txt")) {
-                String documento = Txp_Codigo.getText();
-                String mensaje = saveFile(archivo, documento);
-                if (mensaje != null) {
-                    JOptionPane.showMessageDialog(null, mensaje);
-                } else {
-                    JOptionPane.showMessageDialog(null, "Archivo no compatible.");
-                }
-            } else {
-                JOptionPane.showMessageDialog(null, "Guardar Codigo Java");
-            }
-        }
+        guardar();
     }//GEN-LAST:event_BtnguardarActionPerformed
 
     private void BtnAbrirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAbrirActionPerformed
@@ -218,7 +325,11 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
     private void BtnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiarActionPerformed
         Txp_Codigo.setText("");
     }//GEN-LAST:event_BtnLimpiarActionPerformed
-    
+
+    private void BtnPlantillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPlantillaActionPerformed
+        Plantilla();
+    }//GEN-LAST:event_BtnPlantillaActionPerformed
+
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(() -> {
             new Editor_de_codigo().setVisible(true);
@@ -230,6 +341,7 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
     private javax.swing.JButton BtnCopiar;
     private javax.swing.JButton BtnEjecutar;
     private javax.swing.JButton BtnLimpiar;
+    private javax.swing.JButton BtnPlantilla;
     private javax.swing.JButton Btnguardar;
     private javax.swing.JPanel Pnl_Botones;
     private javax.swing.JPanel Pnl_Codigo;

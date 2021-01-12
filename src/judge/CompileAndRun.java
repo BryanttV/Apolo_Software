@@ -83,11 +83,15 @@ public class CompileAndRun {
     }
 
     static public int run(String clazz) throws IOException, InterruptedException {
+
         ProcessBuilder pb = new ProcessBuilder("java", clazz);
+
         pb.redirectError();
         pb.directory(new File("src"));
         Process p = pb.start();
+
         InputStreamConsumer consumer = new InputStreamConsumer(p.getInputStream());
+
         consumer.start();
         int result = p.waitFor();
         consumer.join();
@@ -101,10 +105,23 @@ public class CompileAndRun {
         return result;
     }
 
-    static public int compile(String file) throws IOException, InterruptedException {
-        ProcessBuilder pb = new ProcessBuilder("javac", file);
+    static public int compile(String ruta) throws IOException, InterruptedException {
+        ProcessBuilder pb = new ProcessBuilder("javac", ruta);
         pb.redirectError();
-        pb.directory(new File("src"));
+
+        String[] partesRuta = ruta.split("\\\\");
+
+        String rutaNueva = "";
+
+        for (int i = 0; i < partesRuta.length - 1; i++) {
+            if (i < partesRuta.length - 2) {
+                rutaNueva += partesRuta[i] + "\\\\";
+            } else {
+                rutaNueva += partesRuta[i];
+            }
+        }
+
+        pb.directory(new File(rutaNueva));
         Process p = pb.start();
         InputStreamConsumer consumer = new InputStreamConsumer(p.getInputStream());
         consumer.start();
