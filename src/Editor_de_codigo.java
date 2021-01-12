@@ -92,6 +92,32 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
         }
     }
 
+    public int compilar(String ruta) throws IOException, InterruptedException {
+        ProcessBuilder pb = new ProcessBuilder("javac", ruta);
+        pb.redirectError();
+
+        String[] partesRuta = ruta.split("\\\\");
+
+        String rutaNueva = "";
+
+        for (int i = 0; i < partesRuta.length - 1; i++) {
+            if (i < partesRuta.length - 2) {
+                rutaNueva += partesRuta[i] + "\\\\";
+            } else {
+                rutaNueva += partesRuta[i];
+            }
+        }
+
+        pb.directory(new File(rutaNueva));
+        Process p = pb.start();
+        InputStreamConsumer consumer = new InputStreamConsumer(p.getInputStream());
+        consumer.start();
+        int result = p.waitFor();
+        consumer.join();
+        System.out.println(consumer.getOutput());
+        return result;
+    }
+
     public int ejecutar(String clase, String ruta) throws IOException, InterruptedException {
 
         List<String> cmds = new ArrayList<>();
@@ -270,9 +296,11 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
             // Ruta donde se guarda el archivo
             String ruta = archivo.toString();
             System.out.println(ruta);
-            // Compila el archivo
-            int result = compile(ruta);
 
+            // Compila el archivo
+            int result = compilar(ruta);
+
+            // Confirmar compilacion exitosa
             if (result != 0) {
                 JOptionPane.showMessageDialog(null, "Compilation Error");
                 System.out.println("Numero: " + result);
@@ -283,6 +311,7 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
             // Ejecutar archivo
             result = ejecutar("Main", ruta);
 
+            // Confirmar ejecucion exitosa
             if (result != 0) {
                 System.out.println("Numero: " + result);
                 JOptionPane.showMessageDialog(null, "Runtime Error");
@@ -290,16 +319,7 @@ public class Editor_de_codigo extends javax.swing.JFrame implements ClipboardOwn
             }
             System.out.println("Ejecutable java (java judge.Main) retorna un " + result);
 
-            String documento = Txp_Codigo.getText();
-            String mensaje = saveFile(archivo, documento);
-            if (mensaje != null) {
-                JOptionPane.showMessageDialog(null, mensaje);
-            } else {
-                JOptionPane.showMessageDialog(null, "Archivo no compatible.");
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(Editor_de_codigo.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InterruptedException ex) {
+        } catch (IOException | InterruptedException ex) {
             Logger.getLogger(Editor_de_codigo.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_BtnEjecutarActionPerformed
