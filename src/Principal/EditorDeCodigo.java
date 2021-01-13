@@ -1,6 +1,5 @@
 package Principal;
 
-
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.ClipboardOwner;
@@ -21,17 +20,17 @@ import java.util.logging.Logger;
 import com.Ostermiller.Syntax.HighlightedDocument;
 
 public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner {
-    
+
     JFileChooser seleccion = new JFileChooser();
     File archivo_abrir, codigo_modificado;
     FileInputStream entrada, in;
     FileOutputStream salida, out;
-    
+
     public EditorDeCodigo() {
         initComponents();
         plantilla();
     }
-    
+
     private void plantilla() {
         Txp_Codigo.setText("public class Main {\n"
                 + "    public static void main(String[] args) {\n"
@@ -39,9 +38,9 @@ public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner
                 + "    } \n"
                 + "}");
     }
-    
+
     public String openFile(File archivo) {
-        
+
         String documento = "";
         try {
             entrada = new FileInputStream(archivo);
@@ -55,7 +54,7 @@ public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner
         }
         return documento;
     }
-    
+
     public String saveFile(File archivo, String documento) {
         String mensaje = null;
         try {
@@ -68,12 +67,12 @@ public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner
         }
         return mensaje;
     }
-    
+
     public void clipBoard(String texto) {
         StringSelection txt = new StringSelection(texto);
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(txt, this);
     }
-    
+
     private void guardar() {
         if (seleccion.showDialog(null, "Guardar") == JFileChooser.APPROVE_OPTION) {
             archivo_abrir = seleccion.getSelectedFile();
@@ -90,15 +89,15 @@ public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner
             }
         }
     }
-    
+
     public int compilar(String ruta) throws IOException, InterruptedException {
         ProcessBuilder pb = new ProcessBuilder("javac", ruta);
         pb.redirectError();
-        
+
         String[] partesRuta = ruta.split("\\\\");
-        
+
         String rutaNueva = "";
-        
+
         for (int i = 0; i < partesRuta.length - 1; i++) {
             if (i < partesRuta.length - 2) {
                 rutaNueva += partesRuta[i] + "\\\\";
@@ -106,7 +105,7 @@ public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner
                 rutaNueva += partesRuta[i];
             }
         }
-        
+
         pb.directory(new File(rutaNueva));
         Process p = pb.start();
         InputStreamConsumer consumer = new InputStreamConsumer(p.getInputStream());
@@ -116,36 +115,36 @@ public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner
         System.out.println(consumer.getOutput());
         return result;
     }
-    
+
     public int ejecutar(String clase, String ruta) throws IOException, InterruptedException {
-        
+
         List<String> cmds = new ArrayList<>();
         cmds.add("java");
         cmds.add(clase);
-        
+
         ProcessBuilder pb = new ProcessBuilder(cmds);
         pb.redirectError();
         pb.redirectInput(new File(System.getProperty("user.dir") + "\\src\\Editor", "output.txt"));
-        
+
         pb.directory(new File("src"));
-        
+
         Process p = pb.start();
         InputStreamConsumer consumer = new InputStreamConsumer(p.getInputStream());
         consumer.start();
         int result = p.waitFor();
         consumer.join();
-        
+
         String writteable = consumer.getOutput().toString();
-        
+
         Txa_Salida.setText(writteable);
-        
+
         try (FileWriter fw = new FileWriter(System.getProperty("user.dir") + "\\src\\Editor\\output.txt")) {
             fw.write(writteable);
         }
-        
+
         return result;
     }
-    
+
     private void entrada() {
         String documento = Txa_Entrada.getText();
         try {
@@ -156,11 +155,20 @@ public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner
             JOptionPane.showMessageDialog(null, "Error al guardar" + e);
         }
     }
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        jMenu1 = new javax.swing.JMenu();
+        jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
+        jPopupMenu1 = new javax.swing.JPopupMenu();
+        jMenu2 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
+        jRadioButtonMenuItem2 = new javax.swing.JRadioButtonMenuItem();
         Pnl_Principal = new javax.swing.JPanel();
         Pnl_Botones = new javax.swing.JPanel();
         Btn_Limpiar = new javax.swing.JButton();
@@ -180,8 +188,26 @@ public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner
         Scp_Entrada = new javax.swing.JScrollPane();
         Txa_Entrada = new javax.swing.JTextArea();
         Lbl_Entrada = new javax.swing.JLabel();
+        MetodosBox = new javax.swing.JComboBox<>();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jMenu1.setText("jMenu1");
+
+        jRadioButtonMenuItem1.setSelected(true);
+        jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
+
+        jMenu2.setText("jMenu2");
+
+        jMenu3.setText("jMenu3");
+
+        jMenuItem1.setText("jMenuItem1");
+
+        jCheckBoxMenuItem1.setSelected(true);
+        jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
+
+        jRadioButtonMenuItem2.setSelected(true);
+        jRadioButtonMenuItem2.setText("jRadioButtonMenuItem2");
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(856, 700));
         setResizable(false);
 
@@ -349,15 +375,30 @@ public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner
 
         Pnl_Principal.add(Pnl_EntradaSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 475, 850, 240));
 
+        MetodosBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Codigo Rapido", "import Scanner", "Scanner", "Ciclo For", "Ciclo For each", "Ciclo do While", "Ciclo While", "Condicional If", "Switch" }));
+        MetodosBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MetodosBoxActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Pnl_Principal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(Pnl_Principal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(MetodosBox, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Pnl_Principal, javax.swing.GroupLayout.DEFAULT_SIZE, 720, Short.MAX_VALUE)
+            .addComponent(Pnl_Principal, javax.swing.GroupLayout.DEFAULT_SIZE, 726, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(MetodosBox, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -386,10 +427,10 @@ public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner
         guardar();
         entrada();
         try {
-            
+
             String code = Txp_Codigo.getText(); // Codigo Modificado
             String codeModificado = ReemplazarCodigo.reemplazar(code, 1);
-            
+
             try {
                 out = new FileOutputStream(System.getProperty("user.dir") + "\\src\\Editor\\Main.java");
                 byte[] bytxt = codeModificado.getBytes();
@@ -397,7 +438,7 @@ public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner
             } catch (IOException e) {
                 JOptionPane.showMessageDialog(null, "Error al guardar" + e);
             }
-            
+
             String ruta = System.getProperty("user.dir") + "\\src\\Editor\\Main.java";  // Ruta donde se guarda el archivo
 
             int result = compilar(ruta);  // Compila el archivo
@@ -406,14 +447,14 @@ public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner
                 JOptionPane.showMessageDialog(null, "Compilation Error");
                 System.out.println("Numero: " + result);
             }
-            
+
             result = ejecutar("editor.Main", ruta); // Ejecuta el archivo
             // Confirmar ejecucion exitosa
             if (result != 0) {
                 System.out.println("Numero: " + result);
                 JOptionPane.showMessageDialog(null, "Runtime Error");
             }
-            
+
         } catch (IOException | InterruptedException ex) {
             Logger.getLogger(EditorDeCodigo.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -430,9 +471,59 @@ public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner
     private void Btn_PlantillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_PlantillaActionPerformed
         plantilla();
     }//GEN-LAST:event_Btn_PlantillaActionPerformed
-    
+
+    private void MetodosBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MetodosBoxActionPerformed
+        String metodo = MetodosBox.getSelectedItem().toString();
+
+        switch (metodo) {
+            case "import Scanner":
+                clipBoard("import java.util.Scanner;");
+                break;
+            case "Scanner":
+                clipBoard("Scanner sc = new Scanner(System.in);");
+                break;
+            case "Ciclo For":
+                clipBoard("for (int i = 0; i < 10; i++) {\n"
+                        + "            //Codigo\n"
+                        + "        }");
+                break;
+            case "Ciclo For each":
+                clipBoard("for (Integer i : arr) {\n"
+                        + "            //Codigo\n"
+                        + "        }");
+                break;
+            case "Ciclo do While":
+                clipBoard("do{\n"
+                        + "            //Codigo\n"
+                        + "        }while(true);");
+                break;
+            case "Ciclo While":
+                clipBoard("while (true) {            \n"
+                        + "            //Codigo\n"
+                        + "        }");
+                break;
+            case "Condicional If":
+                clipBoard("if (true) {\n"
+                        + "            \n"
+                        + "        } else {\n"
+                        + "        }");
+                break;
+            case "Switch":
+                clipBoard("switch(n){\n"
+                        + "            case 1:\n"
+                        + "                break;\n"
+                        + "            default:\n"
+                        + "                break;\n"
+                        + "        }");
+                break;
+            default:
+                clipBoard("");
+                break;
+        }
+    }//GEN-LAST:event_MetodosBoxActionPerformed
+
     public static void main(String args[]) {
-        
+
         java.awt.EventQueue.invokeLater(() -> {
             new EditorDeCodigo().setVisible(true);
         });
@@ -448,6 +539,7 @@ public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner
     private javax.swing.JLabel Lbl_Codigo;
     private javax.swing.JLabel Lbl_Entrada;
     private javax.swing.JLabel Lbl_Salida;
+    private javax.swing.JComboBox<String> MetodosBox;
     private javax.swing.JPanel Pnl_Botones;
     private javax.swing.JPanel Pnl_Codigo;
     private javax.swing.JPanel Pnl_EntradaSalida;
@@ -458,6 +550,15 @@ public class EditorDeCodigo extends javax.swing.JFrame implements ClipboardOwner
     private javax.swing.JTextArea Txa_Entrada;
     private javax.swing.JTextArea Txa_Salida;
     private javax.swing.JTextPane Txp_Codigo;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JPopupMenu jPopupMenu1;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
     // End of variables declaration//GEN-END:variables
 
     @Override

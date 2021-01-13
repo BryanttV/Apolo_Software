@@ -23,6 +23,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
+import Principal.EditorDeCodigo;
 
 public class HomeApolo extends javax.swing.JFrame {
     
@@ -4627,7 +4628,8 @@ public class HomeApolo extends javax.swing.JFrame {
     private void Btn_ProgramarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_ProgramarActionPerformed
         if (Btn_Programar.isSelected()) {
             apagarSecciones(2);
-            
+            EditorDeCodigo edc = new EditorDeCodigo();
+            edc.setVisible(true);
             Toolkit t = Toolkit.getDefaultToolkit();
             Dimension screenSize = t.getScreenSize();
             // Mostrar la Resolucion de Pantalla del Equipo
