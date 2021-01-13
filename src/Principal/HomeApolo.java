@@ -3,8 +3,6 @@ package Principal;
 // Librerias externas y paquetes
 import Tipografias.Fuentes;
 import com.placeholder.PlaceHolder;
-import Main.init;
-//import com.Ostermiller.Syntax.HighlightedDocument;
 
 // Librerias por Default
 import java.awt.Color;
