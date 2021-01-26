@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/BryanttV/Apolo_Software/Bryann/src/Resources/IconoApolo_200px.png" alt="Markdownify"></a>
+  <a><img src="https://raw.githubusercontent.com/BryanttV/Apolo_Software/Bryann/src/Resources/IconoApolo_200px.png" alt="Markdownify"></a>
   <br>
   Apolo
   <br>
